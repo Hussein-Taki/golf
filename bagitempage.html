@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Golf Bags Store</title>
+<style>
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+  }
+
+  .logo {
+    font-weight: bold;
+  }
+
+  .nav-links {
+    display: flex;
+    list-style-type: none;
+  }
+
+  .nav-links li {
+    padding: 0 1em;
+  }
+
+  .search-user {
+    display: flex;
+  }
+
+  .banner {
+    text-align: center;
+    margin: 2em 0;
+  }
+
+  .filter-sort {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+  }
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+    padding: 1em;
+  }
+
+  .product {
+    border: 1px solid #ddd;
+    padding: 1em;
+  }
+
+  .footer {
+    background-color: #f5f5f5;
+    padding: 1em;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<header class="navbar" style="border-bottom: 2px solid #000";>
+  <a href="Home.html">
+<div class="logo">Balmoral Club</div></a>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="clubitempage.html">Clubs</a></li>
+      <li><a href="bagitempage.html">Bags</a></li>
+      <li><a href="accessoriesitempage.html">Accessories</a></li>
+    </ul>
+  </nav>
+  <div class="search-user">
+    <img src="search.png" alt="Search" width="30" height="30">
+    <a href="shoppingbag.html">
+    <img src="shoppingbag.png" alt="User" width="30" height="30" align="left"></a>
+    <img src="menu.png" alt="menu" width="30" height="30" align="left">
+  </div>
+</header>
+
+
+
+<div class="banner" style="
+ display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('golfbagbanner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%; 
+    height: 500px;">
+    <h1 style="margin-top: 20px;">GOLF BAGS</h1>
+    <p>Luxury golf bags for modern lifestyle</p>
+</div>
+
+
+<div class="filter-sort">
+    <div class="filter-dropdown">
+        Colour:
+        <select id="colour-filter">
+            <option value="">Select Colour</option>
+            <option value="black">Black</option>
+            <option value="grey">Grey</option>
+            <option value="red">Red</option>
+        </select>
+    </div>
+
+    <div class="filter-dropdown">
+        Size:
+        <select id="size-filter">
+            <option value="">Select Size</option>
+            <option value="large">Large</option>
+            <option value="medium">Medium</option>
+            <option value="small">Small</option>
+        </select>
+    </div>
+
+    <div class="filter-dropdown">
+</div>
+
+
+      <div class="filter-dropdown">
+        Sort:
+        <select id="sort-filter">
+          <option value="">Select Sort</option>
+          <option value="price_low_high">Price: Lowest to Highest</option>
+          <option value="price_high_low">Price: Highest to Lowest</option>
+          <option value="best_selling">Best Selling</option>
+        </select>
+      </div>
+    </div>
+</div>
+
+<section class="product-grid">
+  <article class="product">
+    <img src="golfbagproduct1.png" alt="Product Image" width="400" height="400">
+    <h2>Eclipse Pro</h2>
+    <p>The pinnacle of elegance and ingenuity in golf bags. Made from the best materials, it has unrivaled durability and style thanks to the reinforcement of carbon fiber and soft leather accents. </p>
+    <p>$500</p>
+  </article>
+</section>
+<section class="product-grid">
+    <article class="product">
+      <img src="golfbagproduct2.png" alt="Product Image" width="400" height="400">
+      <h2>Voyager Elite</h2>
+      <p>The Voyager Elite Golf Bag, made for an individual who demands perfection in every aspect of their game, sits at the nexus of elegance and functionality. This bag combines toughness and subtle beauty. It is made of fine leather with elegant metallic embellishments.</p>
+      <p>$1200</p>
+    </article>
+  </section>
+  <section class="product-grid">
+    <article class="product">
+      <img src="golfbagproduct3.png" alt="Product Image" width="400" height="400">
+      <h2>Verdant Elite</h2>
+      <p>The Verdant Elite Golf Bag exemplifies sophistication and utility. This bag, made of fine matte leather with a delicate texture and precise stitching, symbolizes understated elegance. </p>
+      <p>$1600</p>
+    </article>
+  </section>
+  <section class="product-grid">
+    <article class="product">
+      <img src="golfbagproduct4.png" alt="Product Image" width="400" height="400">
+      <h2>Prestige Pro Tour</h2>
+      <p>The Prestige Pro Tour Golf Bag is the epitome of luxury and functionality for the discerning golfer. Crafted with meticulous attention to detail, this bag is made from the finest materials, offering both durability and a sleek, elegant appearance.</p>
+      <p>$1999</p>
+    </article>
+  </section>
+
+<footer class="footer">
+    <a href="aboutus.html">About Us</a>
+    <a href="FAQ.html">FAQ</a>
+    <a href="TermsandConditions.html">Terms And Conditions</a>
+    <a href="ContactUs.html">Contact Us</a>
+   
+</footer>
+
+</body>
+</html>

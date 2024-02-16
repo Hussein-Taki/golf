@@ -1,0 +1,102 @@
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-links li {
+  padding: 0 1em;
+}
+
+.search-user {
+  display: flex;
+}
+
+.banner {
+  text-align: center;
+  margin: 2em 0;
+}
+
+
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      color: #333;
+    }
+    header, .content, footer {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+    header {
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 10px;
+    }
+    nav a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: #333;
+    }
+    .product-info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .product-details, .product-image {
+      width: 48%;
+    }
+    .product-details {
+      padding: 20px 0;
+    }
+    .product-image img {
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+    select {
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      width: calc(50% - 5px);
+    }
+    .add-to-bag {
+      background-color: #f3f3f3;
+      padding: 10px 20px;
+      display: inline-block;
+      margin-top: 10px;
+      cursor: pointer;
+      border: none;
+    }
+    .add-to-bag i {
+      margin-right: 5px;
+    }
+    .tabs a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: #333;
+      padding-bottom: 5px;
+      border-bottom: 3px solid transparent;
+    }
+    .tabs a.active {
+      border-bottom-color: #333;
+    }
+    .footer {
+      background-color: #f5f5f5;
+      padding: 1em;
+      text-align: center;
+    }
+    
+   
+  

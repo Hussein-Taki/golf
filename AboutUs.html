@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Balmoral Club</title>
+<style>
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+  }
+  .col {
+    width: 50%;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+  .text-content {
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .image-placeholder:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('your-image-url.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  .image-placeholder img {
+    width: 100%;
+    height: auto;
+}
+  .clickable {
+    cursor: pointer;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+  }
+
+  .logo {
+    font-weight: bold;
+  }
+
+  .nav-links {
+    display: flex;
+    list-style-type: none;
+  }
+
+  .nav-links li {
+    padding: 0 1em;
+  }
+
+  .search-user {
+    display: flex;
+  }
+  .footer {
+    background-color: #f5f5f5;
+    padding: 1em;
+    text-align: center;
+  }
+</style>
+
+</head>
+
+<body>
+  <header class="navbar" style="border-bottom: 2px solid #000";>
+    <a href="Home.html">
+    <div class="logo">Balmoral Club</div></a>
+    <nav style="z-index: 1000; position: relative;">
+      <ul class="nav-links">
+        <li><a href="clubitempage.html">Clubs</a></li>
+        <li><a href="#">Bags</a></li>
+        <li><a href="#">Accessories</a></li>
+      </ul>
+    </nav>
+      <div class="search-user">
+        <img src="search.png" alt="Search" width="30" height="30">
+        <a href="shoppingbag.html" style="z-index: 1000; position: relative;">
+        <img src="shoppingbag.png" alt="User" width="30" height="30" align="left"></a>
+        <img src="menu.png" alt="menu" width="30" height="30" align="left">
+      </div>
+    </header>
+<div class="container">
+  <!-- Our Story Section -->
+  <h2>Our Story</h2>
+  
+  <!-- Established in 1990 Section -->
+  <div class="row">
+    <div class="col">
+      <div class="text-content">
+        <h3>Established in 1990</h3>
+        <p>In the lush embrace of pristine landscapes, Balmoral Club was born out of a passion for the timeless sport of golf and the desire for a luxury experience that transcends the ordinary. Since our inception in 1990, we have been dedicated to offering our members an exclusive retreat where the spirit of the game meets the height of sophistication.</p>
+        <p>Our journey began with the vision of crafting a premier destination for golf enthusiasts—a course that harmonizes with the natural beauty of its surroundings while presenting a challenging yet rewarding game for players of all levels. Over the years, our commitment to excellence has solidified our reputation as one of the most prestigious golf clubs in the world.</p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="image-placeholder">
+        <img src="established1990.jpg" alt="Image" width="600" height="400">
+      </div>
+    </div>
+  </div>
+  
+  <!-- Why Us? Section -->
+  <div class="row">
+    <div class="col">
+      <div class="image-placeholder"></div>
+      <img src="balmoreclub.png" alt="Image" width="600" height="400">
+    </div>
+    <div class="col">
+      <div class="text-content">
+        <h3>Why Us?</h3>
+        <p>At Balmoral Club, we offer more than just a game of golf; we provide a legacy of excellence. For those who demand the finest experiences in life, our club is a sanctuary of sophistication and a bastion of bespoke service.</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Originated in Switzerland Section -->
+  <div class="row">
+    <div class="col">
+      <div class="text-content">
+        <h3>Originated in Switzerland</h3>
+        <p>Description text goes here...</p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="image-placeholder">
+        <img src="swissgolf.jpg" alt="Image" width="600" height="400">
+      </div>
+    </div>
+  </div>
+  
+  <!-- Explore Sections -->
+  <div class="row">
+    <div class="col">
+      <div class="">
+        <a href="clubitempage.html">
+          <img src="golfclub.jpeg" alt="Clickable Image" width="400" height="400">
+        </a>
+      </div>
+      <p>Explore Clubs</p>
+    </div>
+    <div class="col">
+      <div class="image-placeholder">
+        <a href="bagitempage.html">
+          <img src="golfbag.png" alt="Clickable Image" width="400" height="400">
+        </a>
+      </div>
+      <p>Explore Bags</p>
+    </div>
+  </div>
+</div>
+<footer class="footer">
+    <a href="aboutus.html">About Us</a>
+    <a href="FAQ.html">FAQ</a>
+    <a href="TermsandConditions.html">Terms And Conditions</a>
+    <a href="ContactUs.html">Contact Us</a>
+</body>
+</html>
+
+
+

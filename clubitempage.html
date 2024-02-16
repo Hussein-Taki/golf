@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Golf Club Store</title>
+<style>
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+  }
+
+  .logo {
+    font-weight: bold;
+  }
+
+  .nav-links {
+    display: flex;
+    list-style-type: none;
+  }
+
+  .nav-links li {
+    padding: 0 1em;
+  }
+
+  .search-user {
+    display: flex;
+  }
+
+  .banner {
+    text-align: center;
+    margin: 2em 0;
+  }
+
+  .filter-sort {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+  }
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+    padding: 1em;
+  }
+
+  .product {
+    border: 1px solid #ddd;
+    padding: 1em;
+  }
+
+  .footer {
+    background-color: #f5f5f5;
+    padding: 1em;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<header class="navbar" style="border-bottom: 2px solid #000";>
+  <a href="Home.html">
+<div class="logo">Balmoral Club</div></a>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="clubitempage.html">Clubs</a></li>
+      <li><a href="bagitempage.html">Bags</a></li>
+      <li><a href="accessoriesitempage.html">Accessories</a></li>
+    </ul>
+  </nav>
+  <div class="search-user">
+    <img src="search.png" alt="Search" width="30" height="30">
+    <a href="shoppingbag.html">
+    <img src="shoppingbag.png" alt="User" width="30" height="30" align="left"></a>
+    <img src="menu.png" alt="menu" width="30" height="30" align="left">
+  </div>
+</header>
+
+
+
+<div class="banner" style="
+ display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('golfclub.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%; 
+    height: 500px;">
+    <h1 style="margin-top: 20px;">GOLF CLUBS</h1>
+    <p>Luxury golf clubs for modern lifestyle</p>
+</div>
+
+
+<div class="filter-sort">
+    <div class="filter-dropdown">
+        Colour:
+        <select id="colour-filter">
+            <option value="">Select Colour</option>
+            <option value="black">Black</option>
+            <option value="grey">Grey</option>
+            <option value="red">Red</option>
+        </select>
+    </div>
+
+    <div class="filter-dropdown">
+        Size:
+        <select id="size-filter">
+            <option value="">Select Size</option>
+            <option value="large">Large</option>
+            <option value="medium">Medium</option>
+            <option value="small">Small</option>
+        </select>
+    </div>
+
+    <div class="filter-dropdown">
+</div>
+
+
+      <div class="filter-dropdown">
+        Sort:
+        <select id="sort-filter">
+          <option value="">Select Sort</option>
+          <option value="price_low_high">Price: Lowest to Highest</option>
+          <option value="price_high_low">Price: Highest to Lowest</option>
+          <option value="best_selling">Best Selling</option>
+        </select>
+      </div>
+    </div>
+</div>
+
+<section class="product-grid">
+  <article class="product"><a href="golfclubproduct1.html">
+    <img src="golfclubproduct1.jpg" alt="Product Image" width="400" height="400">
+    <h2>Golf master 300</h2>
+    <p>Introducing our latest addition to the premium golf equipment line, this elegant golf club is designed with both the amateur and professional golfer in mind. </p>
+    <p>$3000</p></a>
+  </article>
+</section>
+<section class="product-grid">
+    <article class="product">
+      <img src="golfclubproduct2.png" alt="Product Image" width="400" height="400">
+      <h2>Regal Titan Gold Edition</h2>
+      <p>Embodying the pinnacle of golfing luxury, this club is a masterpiece of design and craftsmanship. The shaft, lavishly plated in gold, pairs with a hand-stitched leather grip to offer unmatched elegance and comfort.</p>
+      <p>$6000</p>
+    </article>
+  </section>
+  <section class="product-grid">
+    <article class="product">
+      <img src="golfclubproduct3.png" alt="Product Image" width="400" height="400">
+      <h2>Elite Precision Tour</h2>
+      <p>This golf club is a harmonious blend of technology and tradition, designed for the discerning golfer. With its lightweight graphite shaft and soft, textured grip, it offers superior handling and comfort.</p>
+      <p>$4000</p>
+    </article>
+  </section>
+  <section class="product-grid">
+    <article class="product">
+      <img src="golfclubproduct4.png" alt="Product Image" width="400" height="400">
+      <h2>Elite Gold Series</h2>
+      <p>This golf club is a paragon of luxury and craftsmanship, designed for golfers who demand excellence in every aspect of their game. The shaft, crafted from high-quality titanium and adorned with gold plating, offers a stunning combination of strength and elegance.</p>
+      <p>$4500</p>
+    </article>
+  </section>
+
+<footer class="footer">
+    <a href="aboutus.html">About Us</a>
+    <a href="FAQ.html">FAQ</a>
+    <a href="TermsandConditions.html">Terms And Conditions</a>
+    <a href="ContactUs.html">Contact Us</a>
+   
+</footer>
+
+</body>
+</html>
