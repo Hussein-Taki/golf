@@ -1,36 +1,55 @@
 <!DOCTYPE html> 
 <html lang="en">
 <head>
-    <title>Homepage</title>
+    <title>Balmoral Golf Club</title>
     <link rel="stylesheet" href="Stylee.css">
 </head>
 <body>
-//kkkkkkkk
+
 <div class="video-container">
    
-    <header class="navbar" style="border-bottom: 2px solid #000";>
+    <header class="navbar" 
         <a href="Home.html">
-          <div class="logo">Balmoral Club</div></a>
+          <div class="logo">BALMORAL CLUB </div></a>
+          <div class="centered-nav">
           <nav>
-            <ul class="nav-links">
-              <li><a href="clubitempage.html">Clubs</a></li>
-              <li><a href="bagitempage.html">Bags</a></li>
-              <li><a href="accessoriesitempage.html">Accessories</a></li>
+            <ul class="nav_links">
+              <li class="button"><a href="clubitempage.html">Clubs</a></li>
+              <li class="button"><a href="bagitempage.html">Bags</a></li>
+              <li class="button"><a href="accessoriesitempage.html">Accessories</a></li>
             </ul>
           </nav>
-          <div class="search-user">
-            <img src="search.png" alt="Search" width="30" height="30">
-            <a href="shoppingbag.html">
-            <img src="shoppingbag.png" alt="User" width="30" height="30" align="left"></a>
-            <img src="menu.png" alt="menu" width="30" height="30" align="left">
           </div>
+          <div class="search-user">
+            <div class="icon">
+              <img src="search.png" alt="Search" width="30" height="30">
+            </div>
+            <div class="icon">
+              <a href="shoppingbag.html">
+                <img src="shoppingbag.png" alt="User" width="30" height="30">
+              </a>
+            </div>
+            <div class="icon">
+              <img src="menu.png" alt="Menu" width="30" height="30">
+            </div>
+          </div>
+          
         </header>
           
 
   
-    <video autoplay muted width="100%">
+  
+    <div class="video-container">
+      <video autoplay muted width="100%">
         <source src="BgVid.mp4" type="video/mp4">
-    </video>
+      </video>
+      <div class="text-overlay">
+        <p>Balmoral Clubs</p>
+      </div>
+    </div>
+    
+
+
 
 </div>
 
@@ -38,26 +57,51 @@
 <div class="flex-container">
     <div class="image-container">
         <img src="golfbag.jpeg" alt="Placeholder image for a bag">
+        <div>
+        <button class="explore"><a href="clubitempage.html">Explore</button></a>
+        </div>
     </div>
     <div class="description-container">
-        <h1>Bags</h1>
-        <p>Description</p>
-        <button><a href="clubitempage.html">Explore</button></a>
+        <h1 id="bags">Bags</h1> 
+            <br>
+        <p> Where Elegance Meets Functionality. <br> At Balmoral, our bags are more than mere accessories; they are an embodiment of tradition, craftsmanship, and exclusivity. Handcrafted in the heart of Scotland, each bag tells a story of timeless sophistication and unwavering commitment to excellence.</p>
+        
     </div>
 </div>
 
 <br>
 
-<div class="flex-container2">
-    <div class="image-container2">
-        <img src="Honma-Golfs-Five-Star.jpg" alt="Placeholder image for a bag">
+<div class="flex-container">
+    <div class="description-container">
+        <h1 id="clubs">Clubs</h1> 
+            <br>
+        <p> The Ultimate Golfing Experience. <br> At Balmoral, we believe that the perfect swing starts with the perfect club. Our clubs are designed to provide the ultimate golfing experience, combining cutting-edge technology with the finest materials to deliver unparalleled performance and precision.</p>
+        
     </div>
-    <div class="description-container2">
-        <h1>Clubs</h1>
-        <p>Description</p>
-        <button><a href="bagitempage.html">Explore</button></a>
+    <div class="image-container">
+        <img src="golfclub.jpeg" alt="Placeholder image for a club">
+        <div>
+        <button class="explore"><a href="clubitempage.html">Explore</button></a>
+        </div>
     </div>
-</div>
+
+    
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <script>
     window.onload = function() {
