@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline; 
+    box-sizing: border-box;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 20px 15px; 
+    margin: 0 0;
+    border: 0 0; 
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    width: 100%;
+    z-index: 100;
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-family: "Coldiac", serif;
+    font-size: 2em;
+    color: black;
+  }
+  
+  .logo:hover{
+    color: #333;
+  }
+  
+  .nav_links  { 
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    font-family: Georgia;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+  }
+  
+  .nav_links:hover {
+    color: #333;
+  }
+  
+  .button{
+    padding: 15px;
+    font-weight: 700;
+  }
+  
+  .nav_links a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .nav_links .explore  a:visited {
+    color: black;
+  }
+  
+  .centered-nav {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  
+  .search-user {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .icon {
+    padding: 10px;
+  }
