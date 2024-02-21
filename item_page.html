@@ -6,6 +6,8 @@
 <link rel="stylesheet" href="nav.css">
 <object data="nav.html" type="text/html" style="width:100%;"></object>
 
+
+
 <body>
 
 
@@ -16,74 +18,84 @@
 
 
 <div class="filter-sort">
-    <div class="filter-dropdown">
-        Colour:
-        <select id="colour-filter">
-            <option value="">Select Colour</option>
-            <option value="black">Black</option>
-            <option value="grey">Grey</option>
-            <option value="red">Red</option>
-        </select>
-    </div>
+  <div class="filter-dropdown">
+      
+      <select id="colour-filter">
+          <option value="">Select Colour</option>
+          <option value="black">Black</option>
+          <option value="grey">Grey</option>
+          <option value="red">Red</option>
+      </select>
+  </div>
 
-    <div class="filter-dropdown">
-        Size:
-        <select id="size-filter">
-            <option value="">Select Size</option>
-            <option value="large">Large</option>
-            <option value="medium">Medium</option>
-            <option value="small">Small</option>
-        </select>
-    </div>
+  <div class="filter-dropdown">
+      
+      <select id="size-filter">
+          <option value="">Select Size</option>
+          <option value="large">Large</option>
+          <option value="medium">Medium</option>
+          <option value="small">Small</option>
+      </select>
+  </div>
 
-    <div class="filter-dropdown">
-</div>
-
-
-      <div class="filter-dropdown">
-        Sort:
-        <select id="sort-filter">
-          <option value="">Select Sort</option>
-          <option value="price_low_high">Price: Lowest to Highest</option>
-          <option value="price_high_low">Price: Highest to Lowest</option>
-          <option value="best_selling">Best Selling</option>
-        </select>
-      </div>
+  <div class="filter-dropdown">
+      
+      <select id="sort-filter">
+        <option value="">Sort By</option>
+        <option value="price_low_high">Price: Lowest to Highest</option>
+        <option value="price_high_low">Price: Highest to Lowest</option>
+        <option value="best_selling">Best Selling</option>
+      </select>
     </div>
 </div>
+
 
 <section class="product-grid">
-  <article class="product"><a href="golfclubproduct1.html">
-    <img src="golfclubproduct1.jpg" alt="Product Image" width="400" height="400">
-    <h2>Golf master 300</h2>
-    <p>Introducing our latest addition to the premium golf equipment line, this elegant golf club is designed with both the amateur and professional golfer in mind. </p>
-    <p>$3000</p></a>
+  <article class="product">
+    <div class="product-image">
+      <img src="golfclubproduct1.jpg" alt="Product Image" width="400" height="400">
+    </div>
+    <div class="product-description">
+      <h2 class="title">Golf master 300</h2>
+      <p>Introducing our latest addition to the premium golf equipment line, this elegant golf club is designed with both the amateur and professional golfer in mind.</p>
+      <p>$3000</p>
+    </div>
   </article>
-</section>
-<section class="product-grid">
-    <article class="product">
+
+  <article class="product">
+    <div class="product-image">
       <img src="golfclubproduct2.png" alt="Product Image" width="400" height="400">
-      <h2>Regal Titan Gold Edition</h2>
+    </div>
+    <div class="product-description">
+      <h2 class="title">Regal Titan Gold Edition</h2>
       <p>Embodying the pinnacle of golfing luxury, this club is a masterpiece of design and craftsmanship. The shaft, lavishly plated in gold, pairs with a hand-stitched leather grip to offer unmatched elegance and comfort.</p>
       <p>$6000</p>
-    </article>
-  </section>
-  <section class="product-grid">
-    <article class="product">
+    </div>
+  </article>
+
+  <article class="product">
+    <div class="product-image">
       <img src="golfclubproduct3.png" alt="Product Image" width="400" height="400">
-      <h2>Elite Precision Tour</h2>
+    </div>
+    <div class="product-description">
+      <h2 class="title">Elite Precision Tour</h2>
       <p>This golf club is a harmonious blend of technology and tradition, designed for the discerning golfer. With its lightweight graphite shaft and soft, textured grip, it offers superior handling and comfort.</p>
       <p>$4000</p>
-    </article>
-  </section>
-  <section class="product-grid">
-    <article class="product">
+    </div>
+  </article>
+
+  <article class="product">
+    <div class="product-image">
       <img src="golfclubproduct4.png" alt="Product Image" width="400" height="400">
-      <h2>Elite Gold Series</h2>
+    </div>
+    <div class="product-description">
+      <h2 class="title">Elite Gold Series</h2>
       <p>This golf club is a paragon of luxury and craftsmanship, designed for golfers who demand excellence in every aspect of their game. The shaft, crafted from high-quality titanium and adorned with gold plating, offers a stunning combination of strength and elegance.</p>
       <p>$4500</p>
-    </article>
-  </section>
+    </div>
+  </article>
+</section>
+
 
 <footer class="footer">
     <a href="aboutus.html">About Us</a>
