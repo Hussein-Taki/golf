@@ -6,9 +6,13 @@
     font: inherit;
     vertical-align: baseline; 
    box-sizing: border-box;
-  }
+}
+html{
+  scroll-behavior: smooth;
+}
   body{
     background-color: black;
+    
 
 
 .container {
@@ -86,3 +90,4 @@
     text-align: center;
     background-color: black;
   }
+}
