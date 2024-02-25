@@ -1,100 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Product Page</title>
-  <style>
-
-
-
- body {
- font-family: 'Inter', sans-serif;
- margin: 0;
- padding: 0;
- box-sizing: border-box;
- color: #333;
-}
-    
-    .product-info {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-    .product-details, .product-image {
-      width: 48%;
-    }
-    .product-details {
-      padding: 20px 0;
-    }
-    .product-image img {
-      width: 100%;
-      border: 1px solid #ddd;
-    }
-    select {
-      padding: 10px;
-      margin-bottom: 10px;
-      border: 1px solid #ddd;
-      width: calc(50% - 5px);
-    }
-    .add-to-bag {
-      background-color: #f3f3f3;
-      padding: 10px 20px;
-      display: inline-block;
-      margin-top: 10px;
-      cursor: pointer;
-      border: none;
-    }
-    .add-to-bag i {
-      margin-right: 5px;
-    }
-    .tabs a {
-      margin-right: 15px;
-      text-decoration: none;
-      color: #333;
-      padding-bottom: 5px;
-      border-bottom: 3px solid transparent;
-    }
-    .tabs a.active {
-      border-bottom-color: #333;
-    }
-    .footer {
-    background-color: #f5f5f5;
-    padding: 1em;
-    text-align: center;
-  }
-
-  </style>
-
+    <title>Product Page</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="golfbagproduct2.css">
 </head>
 <body>
 
-  
+<header class="navbar">
+    <a href="Home.html">
+        <div class="logo">BALMORAL CLUBS </div>
+    </a>
+    <div class="centered-nav">
+        <nav>
+            <ul class="nav_links">
+                <li class="button"><a href="item_page.html" target="_blank">Clubs</a></li>
+                <li class="button"><a href="bagitempage.html" target="_blank">Bags</a></li>
+                <li class="button"><a href="accessoriesitempage.html" target="_blank">Accessories</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="search-user">
+        <div class="icon">
+            <img src="search.png" alt="Search" width="30" height="30">
+        </div>
+        <div class="icon">
+            <a href="shoppingbag.html">
+                <img src="shoppingbag.png" alt="User" width="30" height="30">
+            </a>
+        </div>
+        <div class="icon">
+            <img src="menu.png" alt="Menu" width="30" height="30">
+        </div>
+    </div>
+</header>
 
-  <div class="content">
+
+<div class="content">
     <div class="product-info">
-      <div class="product-details">
-        <h2>Voyager Elite</h2>
-        <p>The Voyager Elite Golf Bag, made for an individual who demands perfection in every aspect of their game, sits at the nexus of elegance and functionality. This bag combines toughness and subtle beauty. It is made of fine leather with elegant metallic embellishments.</p>
-        <h3>$1200</h3>
-        <button class="add-to-bag"><i class="fa fa-shopping-bag"></i>Add to Bag</button>
-      </div>
-      <div class="product-image">
-        <img src="golfbagproduct2.png" alt="Product Image">
-      </div>
+        <div class="product-details">
+            <h2>Voyager Elite</h2>
+            <p>The Voyager Elite Golf Bag, made for an individual who demands perfection in every aspect of their game, sits at the nexus of elegance and functionality. This bag combines toughness and subtle beauty. It is made of fine leather with elegant metallic embellishments.</p>
+            <h3>$1200</h3>
+            <button class="add-to-bag"><i class="fa fa-shopping-bag"></i>Add to Bag</button>
+        </div>
+        <div class="product-image">
+            <img src="golfbagproduct2.png" alt="Product Image">
+        </div>
     </div>
 
     <div class="tabs">
-      <a href="#" class="active">Product Details</a>
-      <a href="#">Shipping</a>
-      <a href="#">Reviews</a>
+        <a href="#" class="active">Product Details</a>
+        <a href="#">Shipping</a>
+        <a href="#">Reviews</a>
     </div>
-  </div>
+</div>
 
-  <footer class="footer">
+<footer class="footer">
     <a href="aboutus.html">About Us</a>
     <a href="FAQ.html">FAQ</a>
     <a href="TermsandConditions.html">Terms And Conditions</a>
     <a href="ContactUs.html">Contact Us</a>
-   
 </footer>
 
 </body>
