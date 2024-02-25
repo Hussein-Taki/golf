@@ -80,6 +80,14 @@ html{
     line-height: 1.5;
     color: #FFFFFF; /* White color for better contrast against black background */
   }
+  .separator {
+    background-color: white;
+    color: white;
+    height: 20px; 
+    width: 100%;
+    z-index: 3;
+}
+
   
   .spacer {
     height: 50px;

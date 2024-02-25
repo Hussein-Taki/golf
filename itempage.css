@@ -1,84 +1,64 @@
+/* reset browser defaults */
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline; 
-    box-sizing: border-box;
-  }
-
-    .banner{
-    display: flex;
-    justify-content: center;
-    background-image: url('golfclub.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%; 
-    height: 550px;
-    position: relative;
-    padding-top: 0px;
-    border-top: 0;
-    margin-top: 0;
-    }
-    .banner h1{ 
-      display : flex;
-      float : left ;
-        justify-content: center;
-       position: absolute;
-        top: 35%;
-        width: 100%; 
-        height: 300px;
-        font-family: "fantasy", "copperplate"; 
-        font-size: 60px;
-        font-weight: bolder;
-        color:  white;
-        }   
-
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: black
-  }
-  
-
-  .filter-sort {
-    display: flex;
-    justify-content: center;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
 }
 
-.filter-dropdown-container {
-    display: flex;
-    justify-content: space-around; /* Adjust as needed */
-    width: 50%; /* Adjust as needed */
-    
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: black;
+  color: white;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('golfclub.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 550px;
+  position: relative;
+  padding-top: 0px;
+  border-top: 0;
+  margin-top: 0;
+}
+
+.banner h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  font-family: "fantasy", "copperplate";
+  font-size: 60px;
+  font-weight: bolder;
+  color: white;
+}
+
+.filter-sort {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .filter-dropdown {
-    text-align: left;
-    margin-right: 30px;
-    padding: 1em;
+  text-align: left;
+  margin-right: 20px;
+  padding: 1em;
 }
+
 .filter-dropdown:last-child {
   margin-right: 0;
-}
-
-
-/*  Styling the dropdowns */  
-
-.filter-dropdown-container {
-    display: flex;
-    width: fit-content;
-}
-
-.filter-dropdown {
-    text-align: left;
-    margin-right: 20px;
-}
-
-.filter-dropdown:last-child {
-    margin-right: 0;
 }
 
 /* Styling the dropdowns */
@@ -101,52 +81,52 @@
   background-color: #616161; /* Slightly darker grey */
 }
 
-
 /* Styling the product grid */
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Creates 2 equal-width columns */
+  grid-template-columns: repeat(2, minmax(0, 1fr)); /* Adjusted to minmax(0, 1fr) */
   gap: 1em;
   padding: 1em;
 }
 
 .product {
-  /*border: 1px solid #ddd;*/
   padding: 1em;
-}
-.product-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  border: 1px solid #B3B3B3;
+  border-radius: 40px;
+  border-color: gold;
 }
 
-.product-description {
-  padding: 1em;
-  font-family: 'Arial', sans-serif; /* More readable font */
-  color: #FFFFFF; /* White color for better contrast against black background */
+.product img {
+  width: 100%; /* Keep image width at 100% */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 25px;
 }
 
-.title {
+.product h2 {
   font-size: 36px; /* Larger font size */
   font-weight: bold;
+  margin-bottom: 0.5em;
   color: #FFD700; /* Gold color for the title to make it stand out */
 }
 
-.product-description p {
-  font-size: 18px; /* Larger font size for better readability */
-  line-height: 1.5; /* Adjust as needed */
-  color: #FFFFFF; /* White color for better contrast against black background */
-}
-
-.product-description p:last-child {
+.price {
+  font-size: 1.2em;
   font-style: italic;
   color: #FFD700; /* Gold color for the price to make it stand out */
 }
 
+/* Footer */
 .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: black;
+  color: white;
   padding: 1em;
-  text-align: center;
+  margin-bottom: 1em;
 }
 
-
+.footer a {
+  padding: 0px 21px;
+  color: darkgray;
+}
