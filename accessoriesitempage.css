@@ -7,6 +7,8 @@
     font: inherit;
     vertical-align: baseline;
     box-sizing: border-box;
+    a:visited {
+      color: white; /* Visited link color */
   }
   
   body {
@@ -83,6 +85,7 @@
     border: 1px solid #B3B3B3;
     border-radius: 40px;
     border-color: gold;
+    color: white; 
   }
   
   .product img {
@@ -119,4 +122,4 @@
     padding: 0px 21px;
     color: darkgray;
   }
-  
+}

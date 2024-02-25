@@ -6,6 +6,8 @@
     font: inherit;
     vertical-align: baseline;
     box-sizing: border-box;
+    a:visited {
+        color: white; /* Visited link color */
 }
 
 body {
