@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <title>Product Page</title>
   <style>
@@ -88,51 +88,83 @@
 
 </head>
 <body>
-
- 
+<!-- Navigation Bar -->
+  <header class="navbar">
+    <a href="Home.html">
+      <div class="logo">BALMORAL CLUBS </div>
+    </a>
+    <div class="centered-nav">
+      <nav>
+        <!-- Navigation links -->
+        <ul class="nav_links">
+          <li class="button"><a href="item_page.html">Clubs</a></li>
+          <li class="button"><a href="bagitempage.html">Bags</a></li>
+          <li class="button"><a href="accessoriesitempage.html">Accessories</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Icons for search, shopping bag, and menu -->
+    <div class="search-user">
+      <div class="icon">
+        <img src="search.png" alt="Search" width="30" height="30">
+      </div>
+      <div class="icon">
+        <a href="shoppingbag.html">
+          <img src="shoppingbag.png" alt="User" width="30" height="30">
+        </a>
+      </div>
+      <div class="icon">
+        <img src="menu.png" alt="Menu" width="30" height="30">
+      </div>
+    </div>
+  </header>
+ <!-- Container for the main content of the product page -->
   <div class="content">
+    <!-- Product details section -->
     <div class="product-info">
       <div class="product-details">
-        <h2>Elite Precision Tour</h2>
-        <p>This golf club is a harmonious blend of technology and tradition, designed for the discerning golfer. With its lightweight graphite shaft and soft, textured grip, it offers superior handling and comfort.</p>
-        <h3>$4000</h3>
-        <select>
+        <h2>Elite Precision Tour</h2><!-- Product name -->
+        <p>This golf club is a harmonious blend of technology and tradition, designed for the discerning golfer. With its lightweight graphite shaft and soft, textured grip, it offers superior handling and comfort.</p><!-- Product Description-->
+        <h3>$4000</h3><!-- Price -->
+        <!-- Customization options for the product -->
+        <select><!-- Dropdown for selecting hand orientation -->
           <option>Hand</option>
           <option>Right</option>
           <option>Left</option>
         </select>
-        <select>
+        <select><!-- Dropdown for selecting loft -->
           <option>Loft</option>
           <option>-1.5</option>
           <option>-1</option>
           <option>1</option>
           <option>1.5</option>
         </select>
-        <select>
+        <select><!-- Dropdown for selecting lie -->
           <option>Lie</option>
           <option>Standard</option>
           <option>Upright</option>
         </select>
-        <select>
+        <select><!-- Dropdown for pure service option -->
           <option>Pure Service</option>
           <option>Yes</option>
           <option>No</option>
           <option>
         </select>
-        <button class="add-to-bag"><i class="fa fa-shopping-bag"></i>Add to Bag</button>
+        <button class="add-to-bag"><i class="fa fa-shopping-bag"></i>Add to Bag</button><!-- Button to add the product to the shopping bag -->
       </div>
+      <!-- Product Image-->
       <div class="product-image">
         <img src="golfclubproduct3.png" alt="Product Image">
       </div>
     </div>
-
+<!-- Navigation tabs for additional product information-->
     <div class="tabs">
       <a href="#" class="active">Product Details</a>
       <a href="#">Shipping</a>
       <a href="#">Reviews</a>
     </div>
   </div>
-
+<!-- Footer-->
   <footer class="footer">
     <a href="aboutus.html">About Us</a>
     <a href="FAQ.html">FAQ</a>
