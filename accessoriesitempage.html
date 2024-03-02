@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <title>Golf Bags Store</title>
+  <title>Golf Accessories Store</title>
   <link rel="stylesheet" href="accessoriesitempage.css"> 
   <link rel="stylesheet" href="nav.css">  
   <link rel="stylesheet" href="all.css">
@@ -9,40 +9,44 @@
 
 <body>
 
-<header class="navbar">
-  <a href="Home.html">
-    <div class="logo">BALMORAL CLUBS </div>
-  </a>
-  <div class="centered-nav">
-    <nav>
-      <ul class="nav_links">
-        <li class="button"><a href="item_page.html" target="_blank">Clubs</a></li>
-        <li class="button"><a href="bagitempage.html" target="_blank">Bags</a></li>
-        <li class="button"><a href="accessoriesitempage.html" target="_blank">Accessories</a></li>
-      </ul>
-    </nav>
-  </div>
-  <div class="search-user">
-    <div class="icon">
-      <img src="search.png" alt="Search" width="30" height="30">
+<!-- Navigation Bar -->
+  <header class="navbar">
+    <a href="Home.html">
+      <div class="logo">BALMORAL CLUBS </div>
+    </a>
+    <div class="centered-nav">
+      <nav>
+        <!-- Navigation links -->
+        <ul class="nav_links">
+          <li class="button"><a href="item_page.html" target="_blank">Clubs</a></li>
+          <li class="button"><a href="bagitempage.html" target="_blank">Bags</a></li>
+          <li class="button"><a href="accessoriesitempage.html" target="_blank">Accessories</a></li>
+        </ul>
+      </nav>
     </div>
-    <div class="icon">
-      <a href="shoppingbag.html">
-        <img src="shoppingbag.png" alt="User" width="30" height="30">
-      </a>
+    <!-- Icons for search, shopping bag, and menu -->
+    <div class="search-user">
+      <div class="icon">
+        <img src="search.png" alt="Search" width="30" height="30">
+      </div>
+      <div class="icon">
+        <a href="shoppingbag.html">
+          <img src="shoppingbag.png" alt="User" width="30" height="30">
+        </a>
+      </div>
+      <div class="icon">
+        <img src="menu.png" alt="Menu" width="30" height="30">
+      </div>
     </div>
-    <div class="icon">
-      <img src="menu.png" alt="Menu" width="30" height="30">
-    </div>
-  </div>
-</header>
-
+  </header>
+<!-- Banner image with message -->
 <div class="banner">
   <h1>ACCESSORIES</h1>
 </div>
-
+<!-- Filter and Sort Options -->
 <div class="filter-sort">
   <div class="filter-dropdown">
+    <!-- Dropdown for type filter -->
     Accessories:
     <select id="type-filter">
       <option value="">Select Type</option>
@@ -52,6 +56,7 @@
     </select>
   </div>
   <div class="filter-dropdown">
+    <!-- Dropdown for sorting options -->
     Sort:
     <select id="sort-filter">
       <option value="">Select Sort</option>
@@ -61,28 +66,31 @@
     </select>
   </div>
 </div>
-
+<!-- Product grid containing images, description, and price -->
 <section class="product-grid">
+  <!-- Individual Product -->
   <article class="product"><a href="golfball.html">
-    <img src="golfball.png" alt="Product Image" width="100%" height="400">
-    <h2>Balmore Premium Balls </h2>
-    <p>Our Premium Balls, hand-crafted, from durable materials , (pack of 3)</p>
-    <p class="price">$50</p></a>
+    <img src="golfball.png" alt="Product Image" width="100%" height="400"><!-- Product Image -->
+    <h2>Balmore Premium Balls </h2><!-- Product Name -->
+    <p>Our Premium Balls, hand-crafted, from durable materials, (pack of 3)</p><!-- Product Description-->
+    <p class="price">$50</p></a><!-- Price-->
   </article>
+  <!-- Individual Product -->
   <article class="product"><a href="golftee.html">
-    <img src="golftee.png" alt="Product Image" width="100%" height="400">
-    <h2>Balmore Wooden Tees</h2>
-    <p>Made out of Premium wood from Balmore.</p>
-    <p class="price">$20</p></a>
+    <img src="golftee.png" alt="Product Image" width="100%" height="400"><!-- Product Image -->
+    <h2>Balmore Wooden Tees</h2><!-- Product Name -->
+    <p>Made out of Premium wood from Balmore.</p><!-- Product Description-->
+    <p class="price">$20</p></a><!-- Price-->
   </article>
+  <!-- Individual Product -->
   <article class="product"><a href="golfmarker.html">
-    <img src="golfmarker.png" alt="Product Image" width="100%" height="400">
-    <h2>Balmore Ball Marker</h2>
-    <p>Elevate your golfing experience with the Balmore Club Precision Golf Ball Marker, a symbol of sophistication and precision on the green, </p>
-    <p class="price">$30</p></a>
+    <img src="golfmarker.png" alt="Product Image" width="100%" height="400"><!-- Product Image -->
+    <h2>Balmore Ball Marker</h2><!-- Product Name -->
+    <p>Elevate your golfing experience with the Balmore Club Precision Golf Ball Marker, a symbol of sophistication and precision on the green. </p><!-- Product Description-->
+    <p class="price">$30</p></a><!-- Price-->
   </article>
 </section>
-
+<!-- Footer with additional links -->
 <footer class="footer">
   <a href="aboutus.html">About Us</a>
   <a href="FAQ.html">FAQ</a>
