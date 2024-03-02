@@ -1,26 +1,25 @@
+/* Reset browser defaults */
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-    box-sizing: border-box;
+    margin: 0; /* Resets margin */
+    padding: 0; /* Resets padding */
+    border: 0; /* Resets border */
+    font-size: 100%; /* Sets default font size to 100% */
+    font: inherit; /* Inherits font properties */
+    vertical-align: baseline; /* Aligns vertically to baseline */
+    box-sizing: border-box; /* Uses border-box box model */
 }
-/* CSS for nav.css and golfbagproduct2.css */
-/* Ensure all styles from nav.css and golfbagproduct2.css are included here */
 
-/* Add your additional styles below this line */
-
+/* Body styles */
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif; /* Sets default font family */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: white;
-    background-color: black;
+    color: white; /* Sets text color to white */
+    background-color: black; /* Sets background color to black */
 }
 
+/* Main content container */
 .content {
     max-width: 100%; /* Adjusted to occupy full width */
     margin: 0;
@@ -29,12 +28,14 @@ body {
     justify-content: space-between; /* space between product details and image */
 }
 
+/* Styles for product details */
 .product-details {
     width: 50%; /* left half of the content */
-    margin-top: 2em; /* Increases space between product details and tabs */  
+    margin-top: 2em; /* Increases space between product details and tabs */
     padding-right: 50px; /* Adds padding for spacing */
 }
 
+/* Heading styles */
 h2 {
     font-size: 36px; /* Larger font size */
     font-weight: bold;
@@ -42,12 +43,14 @@ h2 {
     color: #FFD700; /* Gold color for the title to make it stand out */
 }
 
+/* Paragraph styles within product details */
 .product-details p {
     font-size: 20px; /* Increases font size for the description */
     line-height: 1.6; /* Improves readability with increased line height */
     margin-bottom: 20px; /* Adds more spacing between paragraphs */
 }
 
+/* Price heading styles */
 .product-details h3 {
     font-size: 20px; /* Adjusts font size for the price */
     font-weight: bold; /* Makes the price stand out */
@@ -55,19 +58,22 @@ h2 {
     margin-bottom: 20px; /* Adds spacing below the price */
 }
 
+/* Styles for product image */
 .product-image {
     width: 50%; /* right half of the content */
-    margin-top: 2em; /* Increase space between product details and tabs */  
+    margin-top: 2em; /* Increase space between product details and tabs */
 }
 
+/* Image styles */
 .product-image img {
     max-width: 100%;
-    max-height: 100%;
+    max-height: 80%;
     object-fit: contain;
-    border: 2px solid gold; 
-    border-radius: 10px; 
+    border: 2px solid gold; /* Adds border around the image */
+    border-radius: 10px; /* Adds border radius for rounded corners */
 }
 
+/* Tab styles */
 .tabs {
     margin-top: 6em; /* Increase space between tabs and footer */
     margin-bottom: 12em; /* Increase space between tabs and footer */
@@ -76,6 +82,7 @@ h2 {
     width: 100%; /* Full width */
 }
 
+/* Tab link styles */
 .tabs a {
     flex: 1; /* Makes each tab take up equal width */
     text-align: center; /* Centers the text within each tab */
@@ -85,10 +92,12 @@ h2 {
     border-bottom: 3px solid transparent;
 }
 
+/* Active tab link styles */
 .tabs a.active {
-    border-bottom-color: gold;
+    border-bottom-color: gold; /* Adds gold border bottom to active tab */
 }
 
+/* Footer styles */
 .footer {
     display: flex;
     justify-content: center;
@@ -99,99 +108,7 @@ h2 {
     margin-top: 3em; /* Increase space between tabs and footer */
 }
 
-.footer a {
-    padding: 0px 21px;
-    color: darkgray;
-}
-
-
-body {
-    font-family: 'Inter', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: white;
-    background-color: black;
-}
-
-.content {
-    max-width: 100%; /* Adjusted to occupy full width */
-    margin: 0;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between; /* space between product details and image */
-}
-
-.product-details {
-    width: 50%; /* left half of the content */
-    margin-top: 2em; /* Increases space between product details and tabs */  
-    padding-right: 50px; /* Adds padding for spacing */
-}
-
-h2 {
-    font-size: 36px; /* Larger font size */
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #FFD700; /* Gold color for the title to make it stand out */
-}
-
-.product-details p {
-    font-size: 20px; /* Increases font size for the description */
-    line-height: 1.6; /* Improves readability with increased line height */
-    margin-bottom: 20px; /* Adds more spacing between paragraphs */
-}
-
-.product-details h3 {
-    font-size: 20px; /* Adjusts font size for the price */
-    font-weight: bold; /* Makes the price stand out */
-    color: gold; /* Sets gold color for the price */
-    margin-bottom: 20px; /* Adds spacing below the price */
-}
-
-.product-image {
-    width: 50%; /* right half of the content */
-    margin-top: 2em; /* Increase space between product details and tabs */  
-}
-
-.product-image img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-    border: 2px solid gold; 
-    border-radius: 10px; 
-}
-
-.tabs {
-    margin-top: 6em; /* Increase space between tabs and footer */
-    margin-bottom: 12em; /* Increase space between tabs and footer */
-    display: flex; /* tabs align horizontally */
-    justify-content: space-between; /* Distributes tabs evenly */
-    width: 100%; /* Full width */
-}
-
-.tabs a {
-    flex: 1; /* Makes each tab take up equal width */
-    text-align: center; /* Centers the text within each tab */
-    text-decoration: none;
-    color: white;
-    padding-bottom: 5px;
-    border-bottom: 3px solid transparent;
-}
-
-.tabs a.active {
-    border-bottom-color: gold;
-}
-
-.footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    color: white;
-    padding: 1em;
-    margin-top: 3em; /* Increase space between tabs and footer */
-}
-
+/* Footer link styles */
 .footer a {
     padding: 0px 21px;
     color: darkgray;

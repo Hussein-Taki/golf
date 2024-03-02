@@ -1,0 +1,39 @@
+/* FAQ container styles */
+.faq-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* FAQ question styles */
+.faq .question {
+  background-color: #eaff00b1;
+  color: rgb(27, 24, 24);
+  padding: 10px;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+/* FAQ answer styles */
+.faq .answer {
+  display: none;
+  padding: 10px;
+  background-color: gray;
+  margin: 0 0 5px 0;
+}
+
+/* Footer styles */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+/* Footer link styles */
+.footer a {
+  padding: 0px 21px;
+  color: darkgray;
+}

@@ -1,107 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+  <link rel="stylesheet" href="all.css">
+  <link rel="stylesheet" href="shoppingbag.css">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
+
 <head>
 <title>Shopping Bag</title>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-  }
-  .shopping-bag-container {
-    width: 80%;
-    margin: auto;
-    padding-top: 20px;
-  }
-  .shopping-bag-title {
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    margin: 20px 0;
-    text-decoration: underline; /* Underline for the title */
-  }
-  .item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 20px;
-  }
-  .item-image {
-    width: 100px; 
-    height: 100px; 
-    background-color: #ddd; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 20px;
-  }
-  .item-info {
-    flex-grow: 1;
-  }
-  .quantity-selector {
-    display: flex;
-    align-items: center;
-  }
-  .quantity-selector input {
-    width: 40px;
-    text-align: center;
-  }
-  .checkout-button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    text-align: center;
-    margin-top: 20px;
-    border: none;
-    cursor: pointer;
-  }
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1em;
-  }
+</head>
 
-  .logo {
-    font-weight: bold;
-  }
-
-  .nav-links {
-    display: flex;
-    list-style-type: none;
-  }
-
-  .nav-links li {
-    padding: 0 1em;
-  }
-
-  .search-user {
-    display: flex;
-  }
-  .footer {
-    background-color: #f5f5f5;
-    padding: 1em;
-    text-align: center;
-  }
-</style>
-<header class="navbar" style="border-bottom: 2px solid #000";>
+<header class="navbar">
   <a href="Home.html">
-    <div class="logo">Balmoral Club</div></a>
+    <div class="logo">BALMORAL CLUBS </div>
+  </a>
+  <div class="centered-nav">
     <nav>
-      <ul class="nav-links">
-        <li><a href="clubitempage.html">Clubs</a></li>
-        <li><a href="bagitempage.html">Bags</a></li>
-        <li><a href="accessoriesitempage.html">Accessories</a></li>
+      <ul class="nav_links">
+        <li class="button"><a href="item_page.html" target="_blank">Clubs</a></li>
+        <li class="button"><a href="bagitempage.html" target="_blank">Bags</a></li>
+        <li class="button"><a href="accessoriesitempage.html" target="_blank">Accessories</a></li>
       </ul>
     </nav>
-    <div class="search-user">
+  </div>
+  <div class="search-user">
+    <div class="icon">
       <img src="search.png" alt="Search" width="30" height="30">
-      <a href="shoppingbag.html">
-      <img src="shoppingbag.png" alt="User" width="30" height="30" align="left"></a>
-      <img src="menu.png" alt="menu" width="30" height="30" align="left">
     </div>
-  </header>
-</head>
+    <div class="icon">
+      <a href="shoppingbag.html">
+        <img src="shoppingbag.png" alt="User" width="30" height="30">
+      </a>
+    </div>
+    <div class="icon">
+      <img src="menu.png" alt="Menu" width="30" height="30">
+    </div>
+  </div>
+</header>
+
 <body>
 
 <div class="shopping-bag-container">

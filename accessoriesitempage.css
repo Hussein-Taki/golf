@@ -10,6 +10,8 @@
     a:visited {
       color: white; /* Visited link color */
   }
+}
+
   
   body {
     font-family: Arial, sans-serif;
@@ -24,12 +26,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url('golfbagbanner.jpg');
+    background-image: url('accessoriesbanner.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
     height: 550px;
+    
   }
   
   .banner h1 {
@@ -86,12 +89,13 @@
     border-radius: 40px;
     border-color: gold;
     color: white; 
+    margin: auto 25px;
     
   }
   
   .product img {
     border-radius: 25px;
-    height: auto; /* Maintain aspect ratio */
+    height: auto; /* Maintains aspect ratio */
   }
   
   .product h2 {
@@ -123,4 +127,3 @@
     padding: 0px 21px;
     color: darkgray;
   }
-}

@@ -1,118 +1,136 @@
+/* Resets browser defaults */
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-    box-sizing: border-box;
-    a:visited {
-      color: white; /* Visited link color */
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
 
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: black;
-    color: white;
-  
- 
+/* Visited link color */
+a:visited {
+  color: white; /* Sets color for visited links */
+}
 
-  .banner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url('golfbagbanner.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 550px;
-  } 
-  
-  .banner h1 {
-    font-family: "fantasy", "copperplate";
-    font-size: 170px; /* Larger font size */
-    font-weight: bold;
-    color: #FFD700; /* Gold color for the title to make it stand out */
-    margin-bottom: 50px; /* Adds space below the title */
-  }
-  
-  .banner p {
-    font-size: 50px;
-    color: white;
-  }
-  .filter-sort {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
-  .filter-dropdown {
-    margin-right: 20px;
-  }
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: black;
+  color: white;
+}
 
-  /* Styling the dropdowns */
+/* Banner styles */
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('golfbagbanner.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 550px;
+}
+
+/* Heading styles within the banner */
+.banner h1 {
+  font-family: "fantasy", "copperplate";
+  font-size: 170px; /* Larger font size */
+  font-weight: bold;
+  color: #FFD700; /* Gold color for the title to make it stand out */
+  margin-bottom: 50px; /* Adds space below the title */
+}
+
+/* Paragraph styles within the banner */
+.banner p {
+  font-size: 50px;
+  color: white;
+}
+
+/* Filter and sort styles */
+.filter-sort {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Dropdown styles */
+.filter-dropdown {
+  margin-right: 20px;
+}
+
+/* Styling the dropdowns */
 .filter-dropdown select {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: whitesmoke;
-    color: black;
-    font-size: 16px;
-    outline: none;
-    transition: background-color 0.3s ease;
-  }
-  filter-dropdown select:hover {
-    background-color: #616161; /* Slightly darker grey */
-  }
-  
-  
-  
-  .product-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1em;
-    padding: 1em;
-  }
-  
-  .product {
-    padding: 1em;
-    
-    border: 1px solid #B3B3B3;
-    border-radius: 40px;
-    border-color: gold;
-  }
-  .product img {
-    border-radius: 25px;
-    
-  }
-  .product h2 {
-    font-size: 36px; /* Larger font size */
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: whitesmoke;
+  color: black;
+  font-size: 16px;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+/* Dropdown hover styles */
+filter-dropdown select:hover {
+  background-color: #616161; /* Slightly darker grey */
+}
+
+/* Product grid styles */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+  padding: 1em;
+}
+
+/* Product styles */
+.product {
+  padding: 1em;
+  border: 1px solid #B3B3B3;
+  border-radius: 40px;
+  border-color: gold;
+  margin: auto 25px;
+}
+
+/* Product image styles */
+.product img {
+  border-radius: 25px;
+}
+
+/* Product title styles */
+.product h2 {
+  font-size: 36px; /* Larger font size */
   font-weight: bold;
   margin-bottom: 0.5em;
   color: #FFD700; /* Gold color for the title to make it stand out */
-  }
-  .price {
-    color: gold;
-    font-size: 1.2em ;
-    font-style: italic;
-  color: #FFD700; /* Gold color for the price to make it stand out */
-  }
-  .footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    color: white;
-    padding: 1em;
-    margin-bottom: 1em;
-}
-.footer a{
-padding: 0px 21px;
-color:darkgray;
 }
 
+/* Price styles */
+.price {
+  color: gold;
+  font-size: 1.2em ;
+  font-style: italic;
+  color: #FFD700; /* Gold color for the price to make it stand out */
+}
+
+/* Footer styles */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+/* Footer link styles */
+.footer a {
+  padding: 0px 21px;
+  color: darkgray;
 }

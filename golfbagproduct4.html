@@ -1,92 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Product Page</title>
-  <style>
-
-
-
- body {
- font-family: 'Inter', sans-serif;
- margin: 0;
- padding: 0;
- box-sizing: border-box;
- color: #333;
-}
-    
-    .product-info {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-    .product-details, .product-image {
-      width: 48%;
-    }
-    .product-details {
-      padding: 20px 0;
-    }
-    .product-image img {
-      width: 100%;
-      border: 1px solid #ddd;
-    }
-    select {
-      padding: 10px;
-      margin-bottom: 10px;
-      border: 1px solid #ddd;
-      width: calc(50% - 5px);
-    }
-    .add-to-bag {
-      background-color: #f3f3f3;
-      padding: 10px 20px;
-      display: inline-block;
-      margin-top: 10px;
-      cursor: pointer;
-      border: none;
-    }
-    .add-to-bag i {
-      margin-right: 5px;
-    }
-    .tabs a {
-      margin-right: 15px;
-      text-decoration: none;
-      color: #333;
-      padding-bottom: 5px;
-      border-bottom: 3px solid transparent;
-    }
-    .tabs a.active {
-      border-bottom-color: #333;
-    }
-    .footer {
-    background-color: #f5f5f5;
-    padding: 1em;
-    text-align: center;
-  }
-
-  </style>
-
+  <link rel="stylesheet" href="golfbagproduct4.css">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-  
+  <header class="navbar">
+    <a href="Home.html">
+      <div class="logo">BALMORAL CLUBS </div>
+    </a>
+    <div class="centered-nav">
+      <nav>
+        <ul class="nav_links">
+          <li class="button"><a href="item_page.html" target="_blank">Clubs</a></li>
+          <li class="button"><a href="bagitempage.html" target="_blank">Bags</a></li>
+          <li class="button"><a href="accessoriesitempage.html" target="_blank">Accessories</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="search-user">
+      <div class="icon">
+        <img src="search.png" alt="Search" width="30" height="30">
+      </div>
+      <div class="icon">
+        <a href="shoppingbag.html">
+          <img src="shoppingbag.png" alt="User" width="30" height="30">
+        </a>
+      </div>
+      <div class="icon">
+        <img src="menu.png" alt="Menu" width="30" height="30">
+      </div>
+    </div>
+  </header>
 
   <div class="content">
-    <div class="product-info">
-      <div class="product-details">
-        <h2>Prestige Pro Tour</h2>
-        <p>The Prestige Pro Tour Golf Bag is the epitome of luxury and functionality for the discerning golfer. Crafted with meticulous attention to detail, this bag is made from the finest materials, offering both durability and a sleek, elegant appearance.</p>
-        <h3>$2000</h3>
-        <button class="add-to-bag"><i class="fa fa-shopping-bag"></i>Add to Bag</button>
-      </div>
-      <div class="product-image">
-        <img src="golfbagproduct4.png" alt="Product Image">
-      </div>
+    <div class="product-details">
+      <h2>Heritage Tour</h2>
+      <p>Our Heritage Tour Golf Bag is the epitome of luxury and functionality for the discerning golfer. Crafted with meticulous attention to detail, this bag is made from the finest materials, offering both durability and a sleek, elegant appearance.</p>
+      <h3>$2000</h3>
+      <button class="add-to-bag"><i class="fa fa-shopping-bag"></i>Add to Bag</button>
     </div>
+    <div class="product-image">
+      <img src="golfbagproduct4.png" alt="Product Image">
+    </div>
+  </div>
 
-    <div class="tabs">
-      <a href="#" class="active">Product Details</a>
-      <a href="#">Shipping</a>
-      <a href="#">Reviews</a>
-    </div>
+  <div class="tabs">
+    <a href="#" class="active">Product Details</a>
+    <a href="#">Shipping</a>
+    <a href="#">Reviews</a>
   </div>
 
   <footer class="footer">
@@ -94,8 +63,8 @@
     <a href="FAQ.html">FAQ</a>
     <a href="TermsandConditions.html">Terms And Conditions</a>
     <a href="ContactUs.html">Contact Us</a>
-   
-</footer>
+  </footer>
 
 </body>
+
 </html>

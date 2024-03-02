@@ -1,4 +1,4 @@
-/* reset browser defaults */
+/* Reset browser defaults */
 * {
   margin: 0;
   padding: 0;
@@ -7,10 +7,14 @@
   font: inherit;
   vertical-align: baseline;
   box-sizing: border-box;
-  a:visited {
-    color: white; /* Visited link color */
 }
 
+/* Visited link color */
+a:visited {
+    color: white; /* Sets color for visited links */
+}
+
+/* Body styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -18,6 +22,7 @@ body {
   color: white;
 }
 
+/* Banner styles */
 .banner {
   display: flex;
   justify-content: center;
@@ -34,6 +39,7 @@ body {
   margin-top: 0;
 }
 
+/* Heading styles within the banner */
 .banner h1 {
   display: flex;
   justify-content: center;
@@ -47,12 +53,14 @@ body {
   color: white;
 }
 
+/* Filter and sort styles */
 .filter-sort {
   display: flex;
   justify-content: center;
   margin-top: 20px;
 }
 
+/* Dropdown styles */
 .filter-dropdown {
   text-align: left;
   margin-right: 20px;
@@ -63,7 +71,7 @@ body {
   margin-right: 0;
 }
 
-/* Styling the dropdowns */
+/* Dropdown select styles */
 .filter-dropdown select {
   padding: 10px;
   border: none;
@@ -75,15 +83,17 @@ body {
   transition: background-color 0.3s ease;
 }
 
+/* Dropdown select hover styles */
 .filter-dropdown select:hover {
   background-color: #616161; /* Slightly darker grey */
 }
 
+/* Dropdown select focus styles */
 .filter-dropdown select:focus {
   background-color: #616161; /* Slightly darker grey */
 }
 
-/* Styling the product grid */
+/* Product grid styles */
 .product-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr)); /* Adjusted to minmax(0, 1fr) */
@@ -91,19 +101,23 @@ body {
   padding: 1em;
 }
 
+/* Product styles */
 .product {
   padding: 1em;
   border: 1px solid #B3B3B3;
   border-radius: 40px;
   border-color: gold;
+  margin: auto 25px;
 }
 
+/* Product image styles */
 .product img {
   width: 100%; /* Keep image width at 100% */
   height: auto; /* Maintain aspect ratio */
   border-radius: 25px;
 }
 
+/* Product title styles */
 .product h2 {
   font-size: 36px; /* Larger font size */
   font-weight: bold;
@@ -111,13 +125,14 @@ body {
   color: #FFD700; /* Gold color for the title to make it stand out */
 }
 
+/* Price styles */
 .price {
   font-size: 1.2em;
   font-style: italic;
   color: #FFD700; /* Gold color for the price to make it stand out */
 }
 
-/* Footer */
+/* Footer styles */
 .footer {
   display: flex;
   justify-content: center;
@@ -128,6 +143,7 @@ body {
   margin-bottom: 1em;
 }
 
+/* Footer link styles */
 .footer a {
   padding: 0px 21px;
   color: darkgray;

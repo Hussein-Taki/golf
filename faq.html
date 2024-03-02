@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<head>
+  
+  
+      
+      <link rel="stylesheet" href="home.css">
+      <link rel="stylesheet" href="nav.css">
+  
+  
+ 
+  <!-- navbar -->
+      <header class="navbar">
+    <a href="Home.html">
+      <div class="logo">BALMORAL CLUBS </div>
+    </a>
+    <div class="centered-nav">
+      <nav>
+        <ul class="nav_links">
+          <li class="button"><a href="item_page.html" target="_blank">Clubs</a></li>
+          <li class="button"><a href="bagitempage.html" target="_blank">Bags</a></li>
+          <li class="button"><a href="accessoriesitempage.html" target="_blank">Accessories</a></li>
+        </ul>
+      </nav>
+    </div>
+  
+    <div class="search-user">
+      <div class="icon">
+        <img src="search.png" alt="Search" width="30" height="30">
+      </div>
+      <div class="icon">
+        <a href="shoppingbag.html">
+          <img src="shoppingbag.png" alt="User" width="30" height="30">
+        </a>
+      </div>
+      <div class="icon">
+        <img src="menu.png" alt="Menu" width="30" height="30">
+      </div>
+    </div>
+  </header>
+<title>FAQ Page</title>
+<link rel="stylesheet" href="faq.css">
+</head>
+<body>
+
+<div class="faq-container">
+  <h2>FAQs</h2>
+  <div class="faq">
+    <div class="question" onclick="toggleFAQ('faq1')">What is your return policy?</div>
+    <div class="answer" id="faq1">Our return policy is 30 days with a receipt.</div>
+  </div>
+  <div class="faq">
+    <div class="question" onclick="toggleFAQ('faq2')">How do I track my order?</div>
+    <div class="answer" id="faq2">You can track your order with the tracking number provided in your shipment confirmation email.</div>
+  </div>
+  <div class="faq">
+    <div class="question" onclick="toggleFAQ('faq3')">What is your shipping policy?</div>
+    <div class="answer" id="faq3">We offer free shipping on all orders over $3000.</div>
+  </div>
+  <div class="faq">
+    <div class="question" onclick="toggleFAQ('faq4')">How do I return an item?</div>
+    <div class="answer" id="faq4">You can return an item by contacting our customer support team at sales@balmoreclub.com
+</div>
+
+<script>
+function toggleFAQ(id) {
+  var answer = document.getElementById(id);
+  if (answer.style.display === "block") {
+    answer.style.display = "none";
+  } else {
+    answer.style.display = "block";
+  }
+}
+</script>
+<footer class="footer">
+  <a href="aboutus.html">About Us</a>
+  <a href="FAQ.html">FAQ</a>
+  <a href="TermsandConditions.html">Terms And Conditions</a>
+  <a href="ContactUs.html">Contact Us</a>
+
+</body>
+</html>
