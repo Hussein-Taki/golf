@@ -22,15 +22,15 @@
   background-color: #fff;
   width: 100%;
   z-index: 100;
+   
 }
 
-/* Styles for the logo */
-.logo {
-  font-weight: bold;
-  font-family: "Imperial Script", cursive;
-  font-weight:4000 ;
+
+#balmoral{
+  font-family: "Imperial Script", cursive !important; 
+  font-weight: 900; 
   font-style: normal;
-  font-size: 2em;
+  font-size: 3em;
   color: black;
   text-decoration: none;
 }
