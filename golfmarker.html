@@ -1,70 +1,68 @@
 <!DOCTYPE html>
 <html>
 <head>
-  
   <title>Product Page</title>
-  <!-- Navigation Bar -->
-  <header class="navbar">
-    <a href="Home.html">
-      <div class="logo">BALMORAL CLUBS </div>
-    </a>
-    <div class="centered-nav">
-      <nav>
-        <!-- Navigation links -->
-        <ul class="nav_links">
-          <li class="button"><a href="item_page.html" target="_blank">Clubs</a></li>
-          <li class="button"><a href="bagitempage.html" target="_blank">Bags</a></li>
-          <li class="button"><a href="accessoriesitempage.html" target="_blank">Accessories</a></li>
-        </ul>
-      </nav>
-    </div>
-    <!-- Icons for search, shopping bag, and menu -->
-    <div class="search-user">
-      <div class="icon">
-        <img src="search.png" alt="Search" width="30" height="30">
-      </div>
-      <div class="icon">
-        <a href="shoppingbag.html">
-          <img src="shoppingbag.png" alt="User" width="30" height="30">
-        </a>
-      </div>
-      <div class="icon">
-        <img src="menu.png" alt="Menu" width="30" height="30">
-      </div>
-    </div>
-  </header>
+  <link rel="stylesheet" href="accessoriesitem.css"> 
+  <link rel="stylesheet" href="all.css">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
 </head>
-  <body>
-  <!-- Container for the main content of the product page -->
-  <div class="content">
-    <!-- Product details section -->
-    <div class="product-info">
-      <div class="product-details">
-        <h2>Balmore Ball Marker</h2><!-- Product name -->
-        <p>Elevate your golfing experience with the Balmore Club Precision Golf Ball Marker, a symbol of sophistication and precision on the green.</p><!-- Product Description-->
-        <h3>$30</h3><!-- Price-->
-        <button class="add-to-bag"><i class="fa fa-shopping-bag"></i>Add to Bag</button><!-- Button to add the product to the shopping bag -->
-      </div>
-      <!-- Product Image-->
-      <div class="product-image">
-        <img src="golfmarkerproduct.png" alt="Product Image">
-      </div>
+<body>
+
+<header class="navbar">
+  <a href="Home.html">
+    <div class="logo" id="balmoral">Balmoral Clubs </div>
+  </a>
+  <div class="centered-nav">
+    <nav>
+      <ul class="nav_links">
+        <li class="button"><a href="item_page.html">Clubs</a></li>
+        <li class="button"><a href="bagitempage.html">Bags</a></li>
+        <li class="button"><a href="accessoriesitempage.html">Accessories</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="search-user">
+    <div class="icon">
+      <img src="search.png" alt="Search" width="30" height="30">
     </div>
-    
-<!-- Tabs for additional product information -->
-    <div class="tabs">
-      <a href="#" class="active">Product Details</a>
-      <a href="#">Shipping</a>
-      <a href="#">Reviews</a>
+    <div class="icon">
+      <a href="shoppingbag.html">
+        <img src="shoppingbag.png" alt="User" width="30" height="30">
+      </a>
+    </div>
+    <div class="icon">
+      <img src="menu.png" alt="Menu" width="30" height="30">
     </div>
   </div>
-<!-- Footer -->
-  <footer class="footer">
-    <a href="aboutus.html">About Us</a>
-    <a href="FAQ.html">FAQ</a>
-    <a href="TermsandConditions.html">Terms And Conditions</a>
-    <a href="ContactUs.html">Contact Us</a>
-   
+</header>
+
+<div class="content">
+  <div class="product-info">
+    <div class="product-details">
+      <h2>Balmore Ball Marker</h2>
+      <p>Elevate your golfing experience with the Balmore Club Precision Golf Ball Marker, a symbol of sophistication and precision on the green.</p>
+      <h3>$30</h3>
+      <button class="add-to-bag"><i class="fa fa-shopping-bag"></i>Add to Bag</button>
+    </div>
+    <div class="product-image">
+      <img src="golfmarker.png" alt="Product Image">
+    </div>
+  </div>
+  <div class="tabs">
+    <a href="#" class="active">Product Details</a>
+    <a href="#">Shipping</a>
+    <a href="#">Reviews</a>
+  </div>
+</div>
+
+<footer class="footer">
+  <a href="aboutus.html">About Us</a>
+  <a href="FAQ.html">FAQ</a>
+  <a href="TermsandConditions.html">Terms And Conditions</a>
+  <a href="ContactUs.html">Contact Us</a>
 </footer>
 
 </body>

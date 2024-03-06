@@ -140,11 +140,13 @@ body{
     left: 0;
     font-family: 50px;
     color: black !important;
-    background-color: gold;
-    border-radius: 50px ;
+    background-color: black;
     text-decoration: none; /* Removes default underline */
-  
-
+}
+/* repositions second explore button*/
+#explore2{
+  position:absolute;
+  top: 95%;
 }
 
 .image-container {

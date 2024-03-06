@@ -1,128 +1,145 @@
+/* Reset CSS */
+/* Resets margin, padding, border, font-size, font, and vertical alignment */
+/* Ensures consistent rendering across different browsers */
+/* Ensures box-sizing is set to border-box for all elements */
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline; 
-   box-sizing: border-box;
-   a:visited {
-    color: white; /* Visited link color */
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
 }
-html{
+
+/* Styling for visited links */
+a:visited {
+  color: white; /* Visited link color */
+}
+
+/* Smooth scrolling behavior for HTML */
+html {
   scroll-behavior: smooth;
 }
-  body{
-    background-color: black;
-    
 
+/* Body styling */
+body {
+  background-color: black; /* Sets background color to black */
+}
 
+/* Container styling */
 .container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    box-sizing: border-box;
-    color: white ;
-  }
-  /* ids for picture alignment */
-  #ourstorypic{
-    position: relative;
-    right:17px;
-  }
-  #whyuspic{
-    position: relative;
-    right:22px;
-    top: -4px;
-  }
-  #ourbeginningspic{
-    position: relative;
-    top:-8px;
-    right: 17px;
-  
-  }
-
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 -15px;
-  }
-  .col {
-    width: 50%;
-    padding: 0 15px;
-    box-sizing: border-box;
-  }
-  .text-content {
-    padding: 20px;
-    box-sizing: border-box;
-    color: white;
-  }
-  
-  /* explore section*/
-  .row {
-    display: flex;
-    
-  }
-  
-  .col {
-    flex: 1;
-  }
-  
-  .image-container {
-    width: 100%;
-    height: 0;
-    padding-bottom: 70%;
-    position: relative;
-  }
-  
-  .image-container img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .clickable {
-    cursor: pointer;
-  }
-  
-
-  .title {
-    font-size: 36px; /* Larger font size */
-    font-weight: bold;
-    color: #FFD700; /* Gold color for the title to make it stand out */
-    margin-bottom: 20px; /* Adds space below the title */
-  }
-  
-  .description {
-    font-size: 20px; /* Larger font size for better readability */
-    line-height: 1.5;
-    color: #FFFFFF; /* White color for better contrast against black background */
-  }
-  .separator {
-    background-color: white;
-    color: white;
-    height: 20px; 
-    width: 100%;
-    z-index: 3;
+  width: 100%; /* Makes the container full width */
+  max-width: 1200px; /* Sets maximum width for the container */
+  margin: 0 auto; /* Centers the container horizontally */
+  padding: 20px; /* Adds padding inside the container */
+  box-sizing: border-box; /* Ensures padding and border are included in the total width */
+  color: white; /* Sets text color to white */
 }
 
-  
-  .spacer {
-    height: 50px;
+/* Styling for specific images */
+#ourstorypic {
+  position: relative; /* Sets position to relative */
+  right: 17px; /* Moves the image to the right by 17 pixels */
 }
+
+#whyuspic {
+  position: relative; /* Sets position to relative */
+  right: 22px; /* Moves the image to the right by 22 pixels */
+  top: -4px; /* Moves the image up by 4 pixels */
+}
+
+#ourbeginningspic {
+  position: relative; /* Sets position to relative */
+  top: -8px; /* Moves the image up by 8 pixels */
+  right: 17px; /* Moves the image to the right by 17 pixels */
+}
+
+/* Styling for rows */
+.row {
+  display: flex; /* Displays children elements in a flex container */
+  flex-wrap: wrap; /* Allows items to wrap to the next line */
+  margin: 0 -15px; /* Adds negative margin to offset padding */
+}
+
+/* Styling for columns */
+.col {
+  width: 50%; /* Sets width of columns to 50% */
+  padding: 0 15px; /* Adds padding to columns */
+  box-sizing: border-box; /* Ensures padding and border are included in the total width */
+}
+
+/* Styling for text content */
+.text-content {
+  padding: 20px; /* Adds padding around text content */
+  box-sizing: border-box; /* Ensures padding and border are included in the total width */
+  color: white; /* Sets text color to white */
+}
+
+/* Styling for image containers */
+.image-container {
+  width: 100%; /* Sets width to 100% */
+  height: 0; /* Sets initial height to 0 */
+  padding-bottom: 70%; /* Sets aspect ratio for image */
+  position: relative; /* Sets position to relative */
+}
+
+/* Styling for images within containers */
+.image-container img {
+  position: absolute; /* Sets position to absolute */
+  width: 100%; /* Sets width to 100% */
+  height: 100%; /* Sets height to 100% */
+  object-fit: cover; /* Ensures image covers container */
+}
+
+/* Styling for clickable elements */
+.clickable {
+  cursor: pointer; /* Sets cursor to pointer */
+}
+
+/* Styling for titles */
+.title {
+  font-size: 36px; /* Sets font size to 36 pixels */
+  font-weight: bold; /* Sets font weight to bold */
+  color: #FFD700; /* Sets text color to gold */
+  margin-bottom: 20px; /* Adds margin below the title */
+}
+
+/* Styling for descriptions */
+.description {
+  font-size: 20px; /* Sets font size to 20 pixels */
+  line-height: 1.5; /* Sets line height */
+  color: #FFFFFF; /* Sets text color to white */
+}
+
+/* Styling for separators */
+.separator {
+  background-color: white; /* Sets background color to white */
+  color: white; /* Sets text color to white */
+  height: 20px; /* Sets height to 20 pixels */
+  width: 100%; /* Sets width to 100% */
+  z-index: 3; /* Sets z-index to 3 */
+}
+
+/* Styling for spacer */
+.spacer {
+  height: 50px; /* Sets height to 50 pixels */
+}
+
+/* Styling for footer */
 .footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: black;
-  color: white;
-  padding: 1em;
-  margin-bottom: 1em;
+  display: flex; /* Displays children elements in a flex container */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  background-color: black; /* Sets background color to black */
+  color: white; /* Sets text color to white */
+  padding: 1em; /* Adds padding */
+  padding-top: 30px; /* Adds additional padding to the top */
+  margin-bottom: 1em; /* Adds margin at the bottom */
 }
-.footer a{
-padding: 0px 21px;
-color:darkgray;
+
+/* Styling for footer links */
+.footer a {
+  padding: 0px 21px; /* Adds padding to the links */
+  color: darkgray; /* Sets text color to dark gray */
 }
-  }
-   }

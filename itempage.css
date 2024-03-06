@@ -40,7 +40,7 @@ body {
 }
 
 /* Heading styles within the banner */
-.banner h1 {
+.banner h2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,9 +48,9 @@ body {
   top: 35%;
   width: 100%;
   font-family: "fantasy", "copperplate";
-  font-size: 60px;
+  font-size: 8em;
   font-weight: bolder;
-  color: white;
+  color: gold;
 }
 
 /* Filter and sort styles */
