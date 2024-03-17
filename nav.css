@@ -1,0 +1,148 @@
+/* Applies styles to all elements to change browser defaults*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; 
+  box-sizing: border-box;
+}
+
+/* Styles for the navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 20px 15px; 
+  margin: 0 0;
+  border: 0 0; 
+  position: sticky;
+  /*top: 0;*/ /* Maintains position for large product view*/
+  background-color: #fff;
+  width: 100%;
+  z-index: 100;
+   
+}
+
+
+#balmoral{
+  font-family: "Imperial Script", cursive !important; 
+  font-weight: 900; 
+  font-style: normal;
+  font-size: 3em;
+  color: black;
+  text-decoration: none;
+}
+
+/* Styles for links */
+a{
+  text-decoration: none !important;
+}
+
+/* Styles for logo hover effect */
+.logo:hover{
+  color: #333;
+}
+
+/* Styles for navigation links */
+.nav_links  { 
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  font-family: Georgia;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+}
+
+/* Styles for visited links */
+.nav_links a:visited {
+  color: black !important; /* Adjusts visited link color */
+}
+
+/* Styles for navigation links hover effect */
+.nav_links:hover {
+  color: #333;
+}
+
+/* Styles for buttons */
+.button{
+  padding: 15px;
+  font-weight: 700;
+}
+
+/* Styles for navigation links */
+.nav_links a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Styles for visited links within the "explore" class */
+.nav_links .explore  a:visited {
+  color: black;
+}
+
+/* Styles for centering navigation */
+.centered-nav {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+/* Styles for search user */
+.search-user {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Styles for icons */
+.icon {
+  padding: 10px;
+} 
+
+
+/* Styles for search box */
+
+.searchBox {
+  
+  display: flex;
+  align-items: center; /* Aligns items vertically in the center */
+  padding: 10px;
+
+}
+
+.searchBox:hover > .searchInput {
+  width: 240px;
+  padding: 0 6px;
+}
+
+.searchBox:hover > .searchButton {
+  background: white;
+  color : #2f3640;
+}
+
+.searchButton {
+  color: white;
+  float: right;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+
+.searchInput {
+  border: 1px;;
+  background: none;
+  outline:none;
+  float:left;
+  padding: 0;
+  color: black;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px;
+
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+ <title> Contact Us</title> 
+ <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="contactus.css">
+<link rel="stylesheet" type="text/css" href="nav.css">
+<link rel="stylesheet" type="text/css" href="all.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
+
+
+  
+  </header>
+  <header class="navbar">
+  <a href="Home.html">
+    <div class="logo" id="balmoral">Balmoral Clubs </div>
+  </a>
+ <!-- Navigation links to different pages -->
+  <div class="centered-nav">
+    <nav>
+      <ul class="nav_links">
+        <li class="button"><a href="item_page.html">Clubs</a></li>
+        <li class="button"><a href="bagitempage.html">Bags</a></li>
+        <li class="button"><a href="accessoriesitempage.html">Accessories</a></li>
+      </ul>
+    </nav>
+  </div>
+<!-- Icons for search, shopping bag, and menu -->
+<div class="searchBox">
+  <input class="searchInput"type="text" name="" placeholder="Search">
+  <button class="searchButton" href="#">
+      <i class="material-icons">
+          <img src="search.png" alt="search" style="width: 30px; height: 30px;">
+      </i>
+  </button>
+    <div class="icon">
+      <a href="shoppingbag.html">
+        <img src="shoppingbag.png" alt="User" width="30" height="30">
+      </a>
+    </div>
+    <div class="icon">
+      <img src="menu.png" alt="Menu" width="30" height="30">
+    </div>
+  </div>
+</header>
+<header class="header">
+    <img src="swissalps.jpg" alt="Background Image">
+    <h1>Contact Us</h1>
+  </header>
+<body>
+
+<main class="container">
+  <!-- Contact form section -->
+  <section class="form-container">
+    <h2>Contact Via Form</h2>
+    <form action="#" method="post">
+       <!-- Input fields for the contact form -->
+      <input type="text" name="name" placeholder="Name*" required>
+      <input type="email" name="email" placeholder="Email*" required>
+      <input type="tel" name="phone" placeholder="Phone number">
+      <select name="reason" required>
+         <!-- Dropdown for the reason for contacting -->
+        <option value="">Reason for Contacting</option>
+        <option value="order">Order</option>
+        <option value="shipping">Shipping</option>
+        <option value="returns">Returns</option>
+        <option value="product">Product</option>
+        <option value="other">Other</option>
+      </select>
+      <input type="text" name="order" placeholder="Order Number">
+      <textarea name="message" placeholder="Message" rows="4"></textarea>
+      <button type="submit">SEND</button>
+    </form>
+  </section>
+<!-- Customer service contact information -->
+  <section class="customer-service">
+    <h2>Customer Service</h2>
+    <p><a href="mailto:sales@balmoral.com">sales@balmoral.com</a></p>
+    <p>02384724223</p>
+    <p>Monday - Friday</p>
+    <p>9:00 AM - 10:00PM</p>
+  </section>
+</main>
+  <!-- Footer with links to informational pages -->
+<footer class="footer">
+    <a href="aboutus.html">About Us</a>
+    <a href="FAQ.html">FAQ</a>
+    <a href="TermsandConditions.html">Terms And Conditions</a>
+    <a href="ContactUs.html">Contact Us</a>
+</footer>
+
+</body>
+</html>

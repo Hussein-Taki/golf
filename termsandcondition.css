@@ -1,0 +1,36 @@
+/* Terms and conditions container styles */
+.terms-conditions {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Heading styles within terms and conditions */
+.terms-conditions h1,
+.terms-conditions h2 {
+  color: #333;
+}
+
+/* Paragraph styles within terms and conditions */
+.terms-conditions p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  color: #666;
+}
+
+/* Footer styles */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+/* Footer link styles */
+.footer a {
+  padding: 0px 21px;
+  color: darkgray;
+}

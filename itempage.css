@@ -1,0 +1,150 @@
+/* Reset browser defaults */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+/* Visited link color */
+a:visited {
+    color: white; /* Sets color for visited links */
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: black;
+  color: white;
+}
+
+/* Banner styles */
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('golfclub.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 550px;
+  position: relative;
+  padding-top: 0px;
+  border-top: 0;
+  margin-top: 0;
+}
+
+/* Heading styles within the banner */
+.banner h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  font-family: "fantasy", "copperplate";
+  font-size: 8em;
+  font-weight: bolder;
+  color: gold;
+}
+
+/* Filter and sort styles */
+.filter-sort {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Dropdown styles */
+.filter-dropdown {
+  text-align: left;
+  margin-right: 20px;
+  padding: 1em;
+}
+
+.filter-dropdown:last-child {
+  margin-right: 0;
+}
+
+/* Dropdown select styles */
+.filter-dropdown select {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #424242; /* Dark grey */
+  color: #E0E0E0; /* Light grey */
+  font-size: 16px;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+/* Dropdown select hover styles */
+.filter-dropdown select:hover {
+  background-color: #616161; /* Slightly darker grey */
+}
+
+/* Dropdown select focus styles */
+.filter-dropdown select:focus {
+  background-color: #616161; /* Slightly darker grey */
+}
+
+/* Product grid styles */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr)); /* Adjusted to minmax(0, 1fr) */
+  gap: 1em;
+  padding: 1em;
+}
+
+/* Product styles */
+.product {
+  padding: 1em;
+  border: 1px solid #B3B3B3;
+  border-radius: 40px;
+  border-color: gold;
+  margin: auto 25px;
+}
+
+/* Product image styles */
+.product img {
+  width: 100%; /* Keep image width at 100% */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 25px;
+}
+
+/* Product title styles */
+.product h2 {
+  font-size: 36px; /* Larger font size */
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  color: #FFD700; /* Gold color for the title to make it stand out */
+}
+
+/* Price styles */
+.price {
+  font-size: 1.2em;
+  font-style: italic;
+  color: #FFD700; /* Gold color for the price to make it stand out */
+}
+
+/* Footer styles */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+/* Footer link styles */
+.footer a {
+  padding: 0px 21px;
+  color: darkgray;
+}

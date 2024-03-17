@@ -1,0 +1,130 @@
+<!DOCTYPE html> 
+
+<head>
+    <title>Balmoral Golf Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<!-- Contains the navigation bar which has the name and links to different pages -->
+    <header class="navbar">
+  <a href="Home.html">
+    <div class="logo" id="balmoral"> Balmoral Clubs </div>
+                      
+  </a>
+ <!-- Navigation links to different pages -->
+  <div class="centered-nav">
+    <nav>
+      <ul class="nav_links">
+        <li class="button"><a href="item_page.html">Clubs</a></li>
+        <li class="button"><a href="bagitempage.html" >Bags</a></li>
+        <li class="button"><a href="accessoriesitempage.html" >Accessories</a></li>
+      </ul>
+    </nav>
+  </div>
+<!-- Icons for search, shopping bag, and menu -->
+<div class="searchBox">
+  <input class="searchInput"type="text" name="" placeholder="Search">
+  <button class="searchButton" href="#">
+      <i class="material-icons">
+          <img src="search.png" alt="search" style="width: 30px; height: 30px;">
+      </i>
+  </button>
+    <div class="icon">
+      <a href="shoppingbag.html">
+        <img src="shoppingbag.png" alt="User" width="30" height="30">
+      </a>
+    </div>
+    <div class="icon">
+      <img src="menu.png" alt="Menu" width="30" height="30">
+    </div>
+  </div>
+</header>
+<!-- Background video containing video title -->
+<div class="video-container">
+  <div class="video-container">
+    <video autoplay muted width="100%">
+      <source src="BgVid.mp4" type="video/mp4">
+    </video>
+    <div class="text-overlay" id="text-overlay" style="display: none;">
+      <p>Balmoral Clubs</p>
+    </div>
+  </div>
+</div>
+
+<!-- Popup message for email subscription -->
+<div id="popup" class="popup"><h2>Welcome to our site!</h2>
+  <form>
+
+      <input type="email" id="email" name="email" placeholder="Enter your email">
+      <br> <br>  <button id="joButton" onclick="closePopup()">Join Now</button>
+  </form>
+
+</div>
+<!-- Cookie consent message -->
+<div id = "cookie" class="cookie">
+  <p>We use cookies to improve your experience on our site. By using our site you consent cookies. <a href="https://www.aboutcookies.org">Learn more</a></p>
+  <button id="cookieButton" onclick="closeCookie()" >Got it!</button>
+</div>
+
+
+<!-- Redirect to golf bag shopping page -->
+<br>
+<div class="flex-container">
+<!-- Image for golf bag-->
+    <div class="image-container">  
+        <img src="golfbag.jpeg" alt="Placeholder image for a bag">
+        <div>
+        <button class="explore"><a href="./item_page.html">Explore</button></a>
+        </div>
+    </div>
+<!-- Description for golf bag-->
+    <div class="description-container">
+        <h1 id="bags">Bags</h1> 
+            <br>
+        <p> Where Elegance Meets Functionality. <br> At Balmoral, our bags are more than mere accessories; they are an embodiment of tradition, craftsmanship, and exclusivity. Handcrafted in the heart of Scotland, each bag tells a story of timeless sophistication and unwavering commitment to excellence.</p>
+        
+    </div>
+</div>
+
+<br>
+<!-- Redirect to golf club shopping page -->
+<div class="flex-container">
+    <!-- Description for golf club-->
+    <div class="description-container">
+        <h1 id="clubs">Clubs</h1> 
+            <br>
+        <p> The Ultimate Golfing Experience. <br> At Balmoral, we believe that the perfect swing starts with the perfect club. Our clubs are designed to provide the ultimate golfing experience, combining cutting-edge technology with the finest materials to deliver unparalleled performance and precision.</p>
+        
+    </div>
+    <!-- Image for golf club-->
+    <div class="image-container">
+        <img id="clubpic" src="golfclub.jpeg" alt="Placeholder image for a club">
+        <div>
+        <button class="explore" id="explore2"><a href="item_page.html">Explore</button></a>
+        </div>
+    </div>
+
+    
+<!-- Footer for the website; contains links to other helpful pages for the user -->
+</div>
+<footer class="footer">
+  <a href="aboutus.html">About Us</a>
+  <a href="FAQ.html">FAQ</a>
+  <a href="TermsandConditions.html">Terms And Conditions</a>
+  <a href="ContactUs.html">Contact Us</a>
+ 
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
+
+

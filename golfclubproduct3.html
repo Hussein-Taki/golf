@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Product Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="golfclubproduct1.css">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
+<body>
+<!-- Navigation Bar -->
+  <header class="navbar">
+    <a href="Home.html">
+      <div class="logo" id="balmoral">Balmoral Clubs </div>
+    </a>
+    <div class="centered-nav">
+      <nav>
+        <!-- Navigation links -->
+        <ul class="nav_links">
+          <li class="button"><a href="item_page.html">Clubs</a></li>
+          <li class="button"><a href="bagitempage.html">Bags</a></li>
+          <li class="button"><a href="accessoriesitempage.html">Accessories</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Icons for search, shopping bag, and menu -->
+    <div class="searchBox">
+      <input class="searchInput"type="text" name="" placeholder="Search">
+      <button class="searchButton" href="#">
+          <i class="material-icons">
+              <img src="search.png" alt="search" style="width: 30px; height: 30px;">
+          </i>
+      </button>
+      <div class="icon">
+        <a href="shoppingbag.html">
+          <img src="shoppingbag.png" alt="User" width="30" height="30">
+        </a>
+      </div>
+      <div class="icon">
+        <img src="menu.png" alt="Menu" width="30" height="30">
+      </div>
+    </div>
+  </header>
+ <!-- Container for the main content of the product page -->
+  <div class="content">
+    <!-- Product details section -->
+    <div class="product-info">
+      <div class="product-details">
+        <h2>Elite Precision Tour</h2><!-- Product name -->
+        <p>This golf club is a harmonious blend of technology and tradition, designed for the discerning golfer. With its lightweight graphite shaft and soft, textured grip, it offers superior handling and comfort.</p><!-- Product Description-->
+        <h3>$4000</h3><!-- Price -->
+        <!-- Customization options for the product -->
+        <select><!-- Dropdown for selecting hand orientation -->
+          <option>Hand</option>
+          <option>Right</option>
+          <option>Left</option>
+        </select>
+        <select><!-- Dropdown for selecting loft -->
+          <option>Loft</option>
+          <option>-1.5</option>
+          <option>-1</option>
+          <option>1</option>
+          <option>1.5</option>
+        </select>
+        <select><!-- Dropdown for selecting lie -->
+          <option>Lie</option>
+          <option>Standard</option>
+          <option>Upright</option>
+        </select>
+        <select><!-- Dropdown for pure service option -->
+          <option>Pure Service</option>
+          <option>Yes</option>
+          <option>No</option>
+          <option>
+        </select>
+        <button class="add-to-bag"><i class="fa fa-shopping-bag"></i>Add to Bag</button><!-- Button to add the product to the shopping bag -->
+      </div>
+      <!-- Product Image-->
+      <div class="product-image">
+        <img src="golfclubproduct3.png" alt="Product Image">
+      </div>
+    </div>
+<!-- Navigation tabs for additional product information-->
+
+<!-- Tabs for product details, shipping, and reviews -->
+<div class="tabs">
+  <a href="#product-details" class="tab-link">Product Details</a>
+  <a href="#shipping" class="tab-link">Shipping</a>
+  <a href="#reviews" class="tab-link">Reviews</a>
+</div>
+<div id="product-details" class="tab-content" style="display:none;">
+<h2>Product Details</h2>
+<p>Here you can include any specific details about the product. This might include materials, design, technology, or any other features that set your product apart.</p>
+</div>
+
+<!-- Shipping Content -->
+<div id="shipping" class="tab-content" style="display:none;">
+<h2>Shipping</h2>
+<p>Our shipping service ensures that your order arrives safely and on time. We partner with reliable courier services to deliver your products efficiently to your doorstep. Standard shipping usually takes 3-5 business days, while expedited shipping options are available for urgent orders.</p>
+<p>We offer international shipping to select countries. Shipping rates and delivery times may vary depending on the destination. Please refer to our shipping policy for more information.</p>
+</div>
+
+<!-- Reviews Content -->
+<div id="reviews" class="tab-content" style="display:none;">
+<h2>Reviews</h2>
+<p>Read what our customers have to say about their shopping experience with us:</p>
+<div class="review">
+<h3>John Doe</h3>
+<p>"Great products and excellent customer service! I've been a loyal customer for years and have always been satisfied with my purchases."</p>
+</div>
+<div class="review">
+<h3>Jane Smith</h3>
+<p>"Fast shipping and high-quality products. I highly recommend this store to anyone looking for reliable online shopping."</p>
+</div>
+</div>
+<!-- Footer-->
+  <footer class="footer">
+    <a href="aboutus.html">About Us</a>
+    <a href="FAQ.html">FAQ</a>
+    <a href="TermsandConditions.html">Terms And Conditions</a>
+    <a href="ContactUs.html">Contact Us</a>
+   
+</footer>
+
+</body>
+<script src="golfclubproduct1.js"></script>
+</html>

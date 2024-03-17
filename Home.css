@@ -1,0 +1,330 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; 
+ box-sizing: border-box;
+ a:visited {
+  color: white; /* Visited link color */
+ html{
+  scroll-behavior: smooth;
+}
+}
+
+body{
+  font-family: 'Inter', sans-serif;
+ 
+  color: white;
+  background-color: black ;
+  width: 100%;
+  height: 100%
+}
+
+   .explore  a:visited {
+    color: white; /* Sets the visited link color (same as regular link) */
+  }
+  
+
+  .video-container {
+    position: relative;
+    top: -30px;
+    z-index: 0;
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    font-family: "Imperial Script", cursive;
+    font-weight:4000 ;
+    font-style: normal;
+    font-size: 4em;
+    transition: bottom 0.5s ease-in-out;
+  }
+
+
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      color: white;
+      background-color: black;
+    }
+    /* to add name and description next to image in home page */
+    .flex-container {
+      display: flex;
+      justify-content: space-between; /* Distributes columns evenly */
+      align-items: center; /* Vertically centers content */
+  }
+  
+  .image-container {
+      flex-basis: 50%; /* to take up half of the available width */
+      position: relative;
+      top: -82px;
+      z-index: 1;
+  }
+  
+  .description-container {
+      flex-basis: 50%; /* Take up the other half of the available width */
+      padding-left: 0px; /* Add some spacing between image and text */
+      font-family: "Georgia", serif;
+      font-size: 30px;
+      font-weight: normal;
+      background-color: black;
+      position: relative;
+      top: -82px;
+      
+  }
+  .description-container #bags{
+    font-family: "Georgia", serif;
+    font-size: 35px;
+    font-weight: bold;
+    color: gold;
+
+  }
+  /* to add explore link at bottom of image */
+  .explore{
+    z-index: 2; /* interference with image */
+    position: absolute;
+    left:0;
+  }
+  
+  /* second image*/
+.flex-container {
+    display: flex;
+    justify-content: space-between; /* Distributes columns evenly */
+    align-items: center; /* Vertically centers content */
+}
+
+.image-container {
+    flex-basis: 50%; /* Takes up half of the available width */
+    position: relative;
+    top: -83px;
+    z-index: 1; /* Adjust the stacking order if needed */   
+}
+#clubpic{
+  position: relative;
+  top: -22px;
+  height: 350px;
+}
+.description-container {
+    flex-basis: 50%; /* Takes up the other half of the available width */
+    padding-left: 22px; /* Add some spacing between image and text */
+    font-family: "Georgia", serif;
+    font-size: 30px;
+    font-weight: normal;
+  background-color:black;
+  position : relative;
+  top: -82px; 
+  
+      
+}
+
+.description-container #clubs {
+    font-family: "Georgia", serif;
+    font-size: 35px;
+    font-weight: bold;
+    color:gold
+}
+
+/* To add an explore link at the bottom of the image */
+ .explore {
+    z-index: 2; /* Adjust interference with the image */
+    position: absolute;
+    left: 0;
+    font-family: 50px;
+    color: black !important;
+    background-color: black;
+    text-decoration: none; /* Removes default underline */
+}
+/* repositions second explore button*/
+#explore2{
+  position:absolute;
+  top: 95%;
+}
+
+.image-container {
+  width: 50%;
+  height: 50%;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+    .product-info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .product-details, .product-image {
+      width: 48%;
+    }
+    .product-details {
+      padding: 20px 0;
+    }
+    .product-image img {
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+
+    
+    
+    select {
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      width: calc(50% - 5px);
+    }
+    .add-to-bag {
+      background-color: #f3f3f3;
+      padding: 10px 20px;
+      display: inline-block;
+      margin-top: 10px;
+      cursor: pointer;
+      border: none;
+    }
+    .add-to-bag i {
+      margin-right: 5px;
+    }
+    .tabs a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: #333;
+      padding-bottom: 5px;
+      border-bottom: 3px solid transparent;
+    }
+    .tabs a.active {
+      border-bottom-color: #333;
+    }
+    .footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: black;
+      color: white;
+      padding: 1em;
+      margin-bottom: 1em;
+  }
+  .footer a{
+  padding: 0px 21px;
+  color:darkgray;
+  }
+    
+   
+}
+
+
+/* Wait-list CSS */
+.popup {
+  position: fixed;
+  z-index: 10000;
+  bottom: -100%; /* Start off screen */
+  right: 0;
+  width: 300px;
+  height: 200px;
+  background: rgb(255, 251, 251);
+  background: linear-gradient(180deg, rgba(255, 251, 251, 1) 0%, rgba(25, 224, 110, 1) 100%, rgba(18, 224, 130, 1) 100%);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+  transition: bottom 0.5s ease-in-out; /* Smooth transition for the popup */
+}
+
+.popup h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+
+/* Class to bring the popup into view */
+.popup-show {
+  bottom: 0;
+}
+
+#email {
+  background: transparent;
+  width: 250px;
+  padding: 1em;
+  margin-bottom: 1em;
+  border: none;
+  border-left: 1px white;
+  border-top: 1px white;
+  border-radius: 5000px;
+  backdrop-filter: blur(5px);
+  box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
+  color: black;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+#joButton {
+  display: block;
+  width: 100px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#joButton:hover {
+  background: linear-gradient(180deg, rgba(25, 224, 110, 1) 30%, rgba(18, 224, 130, 1) 70%);
+  cursor: pointer;
+}
+
+/* Cookies CSS */
+.cookie {
+  position: fixed;
+  z-index: 9999;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background: white;
+  color: blue;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  transition: bottom 0.5s ease-in-out;
+}
+
+.cookie-show {
+  bottom: 0;
+}
+
+#cookieButton {
+  display: block;
+  margin: 0 auto;
+  background: black;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  height: 10%;
+  width: 5%;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+

@@ -1,0 +1,6 @@
+/* fix so that visited links are white while nav bar isnt affected*/
+body{ 
+a:visited {
+    color: white !important; /* Visited link color */
+ }
+}
