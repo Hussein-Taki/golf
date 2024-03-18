@@ -33,19 +33,42 @@ function setupAddToBagButton() {
     });
 }
 
+
+
+
+
 // Function to handle interactive tab navigation
 function setupTabNavigation() {
     const tabs = document.querySelectorAll('.tabs a');
+    const tabContents = document.querySelectorAll('.tab-content');
+
     tabs.forEach(tab => {
         tab.addEventListener('click', (e) => {
             e.preventDefault();
 
+            // Identify the target tab's associated content
+            const targetContent = document.querySelector(e.target.getAttribute('href'));
+
+            // Hide all tab contents
+            tabContents.forEach(content => {
+                content.style.display = 'none';
+            });
+
             // Remove 'active' class from all tabs and add to the clicked one
-            tabs.forEach(t => t.classList.remove('active'));
+            tabs.forEach(t => {
+                t.classList.remove('active');
+                // Optional: Hide corresponding tab content
+            });
             tab.classList.add('active');
 
-            // Load content for the clicked tab dynamically
-            // Content loading could be done via AJAX requests or by showing/hiding sections of the page
+            // Show the clicked tab's content
+            // Assuming your hrefs are set like #product-details, #shipping, etc.
+            document.getElementById(targetContent.id).style.display = 'block';
         });
     });
+
+    // Optionally, automatically click the first tab to make it active on page load
+    if (tabs.length > 0) {
+        tabs[0].click();
+    }
 }
