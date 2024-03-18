@@ -48,15 +48,31 @@
 </header>
 <!-- Background video containing video title -->
 <div class="video-container">
-    <div class="video-container">
-      <video autoplay muted width="100%">
-        <source src="BgVid.mp4" type="video/mp4">
-      </video>
-      <div class="text-overlay">
-        <p>Balmoral Clubs</p>
-      </div>
+  <div class="video-container">
+    <video autoplay muted width="100%">
+      <source src="BgVid.mp4" type="video/mp4">
+    </video>
+    <div class="text-overlay" id="text-overlay" style="display: none;">
+      <p>Balmoral Clubs</p>
     </div>
+  </div>
 </div>
+
+<!-- Popup message for email subscription -->
+<div id="popup" class="popup"><h2>Welcome to our site!</h2>
+  <form>
+
+      <input type="email" id="email" name="email" placeholder="Enter your email">
+      <br> <br>  <button id="joButton" onclick="closePopup()">Join Now</button>
+  </form>
+
+</div>
+<!-- Cookie consent message -->
+<div id = "cookie" class="cookie">
+  <p>We use cookies to improve your experience on our site. By using our site you consent cookies. <a href="https://www.aboutcookies.org">Learn more</a></p>
+  <button id="cookieButton" onclick="closeCookie()" >Got it!</button>
+</div>
+
 <!-- Redirect to golf bag shopping page -->
 <br>
 <div class="flex-container">
@@ -97,14 +113,6 @@
     
 
 
-<script>
-    window.onload = function() {
-      setTimeout(function() {
-        var title = document.querySelector('.video-title');
-        title.style.display = 'block';
-      }, 16000); 
-    };
-  </script>
     
 <!-- Footer for the website; contains links to other helpful pages for the user -->
 </div>
@@ -115,6 +123,7 @@
   <a href="ContactUs.html">Contact Us</a>
  
 </footer>
+    <script src="script.js"></script>
 </body>
 </html>
 
